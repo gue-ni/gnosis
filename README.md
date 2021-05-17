@@ -5,17 +5,19 @@
 ```
 domain=example.com
 
-sudo touch /etc/nginx/sites-available/$domain.conf
+sudo -i
 
-sudo mkdir -p /var/log/nginx/$domain
+touch /etc/nginx/sites-available/$domain.conf
 
-sudo mkdir -p /var/www/$domain
+mkdir -p /var/log/nginx/$domain
 
-echo $domain | sudo tee > /var/www/$domain/index.html
+mkdir -p /var/www/$domain
 
-sudo ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
+echo $domain > /var/www/$domain/index.html
 
-sudo nginx -t
+ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
 
-sudo nginx -s reload
+nginx -t
+
+nginx -s reload
 ```
