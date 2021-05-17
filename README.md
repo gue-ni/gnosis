@@ -3,14 +3,21 @@
 ## basic nginx setup
 
 ```
-sudo touch /etc/nginx/sites-available/example.com
+domain=example.com
 
-sudo mkdir -p /var/www/example.com;
-sudo mkdir -p /var/log/nginx/example.com;
+sudo -i
 
-sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
+touch /etc/nginx/sites-available/$domain.conf
 
-sudo nginx -t
+mkdir -p /var/log/nginx/$domain
 
-sudo nginx -s reload
+mkdir -p /var/www/$domain
+
+echo $domain > /var/www/$domain/index.html
+
+ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
+
+nginx -t
+
+nginx -s reload
 ```
