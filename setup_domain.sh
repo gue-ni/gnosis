@@ -1,5 +1,7 @@
 #!/bin/bash
-domain=example.com
+domain=$1
+
+echo $domain
 
 sudo -i
 
