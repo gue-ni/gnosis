@@ -3,9 +3,10 @@
 ## basic nginx setup
 
 ```
-touch /etc/nginx/sites-available/example.com
+sudo touch /etc/nginx/sites-available/example.com
 
-mkdir -p /var/log/nginx/bezirksli.ga;
+sudo mkdir -p /var/www/example.com;
+sudo mkdir -p /var/log/nginx/example.com;
 
 sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
 
