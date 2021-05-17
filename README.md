@@ -11,7 +11,7 @@ sudo mkdir -p /var/log/nginx/$domain
 
 sudo mkdir -p /var/www/$domain
 
-sudo echo $domain >> /var/www/$domain/index.html
+echo $domain | sudo tee > /var/www/$domain/index.html
 
 sudo ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
 
