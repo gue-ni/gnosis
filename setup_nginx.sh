@@ -9,9 +9,7 @@ mkdir -p /var/log/nginx/$domain
 
 mkdir -p /var/www/$domain
 
-echo $domain > /var/www/$domain/index.html
-
-touch /etc/nginx/sites-available/$domain.conf
+echo "<h1>Hello from $domain.</h1>" > /var/www/$domain/index.html
 
 wget https://raw.githubusercontent.com/gue-ni/server/main/example.com.conf -O /etc/nginx/sites-available/$domain.conf
 
