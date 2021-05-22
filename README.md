@@ -5,9 +5,7 @@
 ```
 domain=example.com
 
-mkdir -p /var/log/nginx/$domain
-
-mkdir -p /var/www/$domain
+mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 
 echo "<h1>Hello from $domain.</h1>" > /var/www/$domain/index.html
 
