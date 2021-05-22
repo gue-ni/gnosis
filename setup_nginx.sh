@@ -1,7 +1,7 @@
 #!/bin/bash
 domain=$1
 
-echo $domain
+echo "Setting up nginx for $domain"
 
 sudo -i
 
@@ -13,7 +13,7 @@ echo $domain > /var/www/$domain/index.html
 
 touch /etc/nginx/sites-available/$domain.conf
 
-wget https://raw.githubusercontent.com/gue-ni/raspberrypi-server/main/example.com.conf -O /etc/nginx/sites-available/$domain.conf
+wget https://raw.githubusercontent.com/gue-ni/server/main/example.com.conf -O /etc/nginx/sites-available/$domain.conf
 
 sed -i "s/example.com/$domain/g" /etc/nginx/sites-available/$domain.conf
 
