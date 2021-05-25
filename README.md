@@ -7,7 +7,9 @@ domain=example.com
 
 mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 
-echo "<h1>Hello from $domain.</h1>" > /var/www/$domain/index.html
+wget https://raw.githubusercontent.com/gue-ni/server/main/conf_files/index.html -O /var/www/$domain/index.html
+
+sed -i "s/example.com/$domain/g" /var/www/$domain/index.html
 
 wget https://raw.githubusercontent.com/gue-ni/server/main/conf_files/example.com.conf -O /etc/nginx/sites-available/$domain.conf
 
