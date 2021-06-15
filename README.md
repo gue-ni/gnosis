@@ -37,5 +37,8 @@ nginx -t && nginx -s reload
 
 `/var/lib/docker/volumes/`
 
+`docker volume create todo-db`
+
+
 
 
