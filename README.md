@@ -27,10 +27,15 @@ nginx -t && nginx -s reload
 
 ## docker
 
-`sudo docker build . -t jakob/web-service`
+`docker build . -t jakob/web-service`
 
-`sudo docker run -p 5001:5001 -d jakob/web-service`
+`docker run -dp 5001:5001 jakob/web-service`
 
-`sudo docker exec -t -i <container id> /bin/bash`
+`docker exec -t -i <container id> /bin/bash`
 
-`sudo docker-compose up -d`
+`docker-compose up -d`
+
+`/var/lib/docker/volumes/`
+
+
+
