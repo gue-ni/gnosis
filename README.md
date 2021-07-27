@@ -1,6 +1,6 @@
-# server
+# Server
 
-## basic nginx setup
+## Basic NGINX setup
 
 ```
 domain=example.com
@@ -29,7 +29,7 @@ nginx -t && nginx -s reload
 
 ```
 
-## docker
+## Docker
 
 `docker build . -t jakob/web-service`
 
