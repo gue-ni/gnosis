@@ -26,7 +26,6 @@ nginx -t && nginx -s reload
 certbot --nginx -d $domain -d www.$domain -d api.$domain 
 
 nginx -t && nginx -s reload
-
 ```
 
 ## Docker
