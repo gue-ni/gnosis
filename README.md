@@ -18,7 +18,11 @@ sed -i "s/example.com/$domain/g" /etc/nginx/sites-available/$domain.conf
 ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
 
 nginx -t && nginx -s reload
+```
 
+### Add SSL 
+
+```
 certbot --nginx -d $domain -d www.$domain -d api.$domain 
 
 nginx -t && nginx -s reload
