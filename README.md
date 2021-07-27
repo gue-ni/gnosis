@@ -1,6 +1,8 @@
 # Server
 
-## Basic NGINX setup
+## NGINX
+
+### Basic setup
 
 ```
 domain=example.com
