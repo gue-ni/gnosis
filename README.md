@@ -19,7 +19,7 @@ ln -s /etc/nginx/sites-available/$domain.conf /etc/nginx/sites-enabled/
 
 nginx -t && nginx -s reload
 
-certbot --nginx -d $domain -d www.$domain
+certbot --nginx -d $domain -d *.$domain
 
 nginx -t && nginx -s reload
 
