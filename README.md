@@ -6,17 +6,17 @@
 
 ```bash
 domain=example.com
-github=https://raw.githubusercontent.com/gue-ni/server/main/conf_files
+github=https://raw.githubusercontent.com/gue-ni/server/main
 
 # create directories
 mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 
 # create website
-wget $github/index.html -O /var/www/$domain/index.html
+wget $github/conf_files/index.html -O /var/www/$domain/index.html
 sed -i "s/example.com/$domain/g" /var/www/$domain/index.html
 
 # create nginx conf files
-wget $github/example.com.conf -O /etc/nginx/sites-available/$domain.conf
+wget $github/conf_files/example.com.conf -O /etc/nginx/sites-available/$domain.conf
 sed -i "s/example.com/$domain/g" /etc/nginx/sites-available/$domain.conf
 
 # symlink and reload
@@ -40,7 +40,7 @@ sudo chgrp -R users /srv
 sudo chmod -R g+w /srv
 
 project=example_web_service
-github=https://raw.githubusercontent.com/gue-ni/server/main/conf_files
+github=https://raw.githubusercontent.com/gue-ni/server/main
 
 # create git repo
 sudo mkdir -p /srv/git/$project.git
@@ -54,8 +54,8 @@ sudo git config core.sharedRepository group
 
 # create post-receive hook
 cd /srv/git/$project.git/hooks
-wget $github/post-receive -O /srv/git/$project.git
-sed -i "s/project/$project/g" /srv/git/$project.git
+wget $github/scripts/post-receive -O /srv/git/$project.git/hooks/post-receive
+sed -i "s/project/$project/g" /srv/git/$project.git/hooks/post-receive
 sudo chmod +x post-receive
 ```
 
