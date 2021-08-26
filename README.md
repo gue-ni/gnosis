@@ -30,6 +30,8 @@ nginx -t && nginx -s reload
 
 ## Deploy with git
 
+https://stackoverflow.com/questions/31147389/git-remote-fatal-you-are-on-a-branch-yet-to-be-born
+
 On server:
 
 ```bash
