@@ -1,0 +1,17 @@
+#!/bin/sh
+# The production directory
+TARGET="/srv/www/project"
+# A temporary directory for deployment
+TEMP="/srv/tmp/project"
+# The Git repo
+REPO="/srv/git/project.git"
+# Deploy the content to the temporary directory
+mkdir -p $TARGET
+git --work-tree=$TARGET --git-dir=$REPO checkout -f
+cd $TARGET
+# Do stuffs, like npm install…
+# Replace the production directory
+# with the temporary directory
+cd /
+# rm -rf $TARGET
+#mv $TEMP $TARGET
