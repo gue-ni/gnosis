@@ -12,11 +12,11 @@ github=https://raw.githubusercontent.com/gue-ni/server/main
 mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 
 # create website
-wget $github/conf_files/index.html -O /var/www/$domain/index.html
+wget $github/configs/index.html -O /var/www/$domain/index.html
 sed -i "s/example.com/$domain/g" /var/www/$domain/index.html
 
 # create nginx conf files
-wget $github/conf_files/example.com.conf -O /etc/nginx/sites-available/$domain.conf
+wget $github/configs/example.com.conf -O /etc/nginx/sites-available/$domain.conf
 sed -i "s/example.com/$domain/g" /etc/nginx/sites-available/$domain.conf
 
 # symlink and reload
