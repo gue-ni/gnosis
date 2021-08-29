@@ -1,9 +1,8 @@
 # Git
 
-| Command  | What does it do? |
-| -------- | ---------------- |
-| `groups` |                  |
-| `chmod`  |                  |
+| Command | What does it do?               |
+| ------- | ------------------------------ |
+| `chmod` | change file/folder permissions |
 
 ## ssh disallow root login
 

@@ -36,7 +36,7 @@ On server:
 # setup
 sudo mkdir -p /srv/tmp/
 sudo mkdir -p /srv/www/
-sudo chgrp -R users /srv
+sudo chgrp -R www-data /srv
 sudo chmod -R g+w /srv
 
 project=example_web_service
@@ -47,7 +47,7 @@ sudo mkdir -p /srv/git/$project.git
 cd /srv/git/$project.git
 sudo git init --bare
 cd /srv/git/$project.git
-sudo chgrp -R users .
+sudo chgrp -R www-data .
 sudo chmod -R g+rwX .
 sudo find . -type d -exec chmod g+s '{}' +
 sudo git config core.sharedRepository group
@@ -62,6 +62,6 @@ sudo chmod +x post-receive
 On local machine:
 
 ```bash
-git remote add deploy ssh://pi@jakobmaier.at/srv/git/$project.git/
-git push deploy master
+git remote add production ssh://pi@jakobmaier.at/srv/git/$project.git/
+git push production master
 ```
