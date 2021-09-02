@@ -28,9 +28,7 @@ certbot --nginx -d $domain -d www.$domain -d api.$domain
 nginx -t && nginx -s reload
 ```
 
-## Deploy with git
-
-https://stackoverflow.com/questions/31147389/git-remote-fatal-you-are-on-a-branch-yet-to-be-born
+## Deploy with git post-receive hook
 
 On server:
 
@@ -41,7 +39,7 @@ sudo mkdir -p /srv/www/
 sudo chgrp -R users /srv
 sudo chmod -R g+w /srv
 
-project=example_web_service
+project=example_project
 github=https://raw.githubusercontent.com/gue-ni/server/main
 
 # create git repo
@@ -64,20 +62,7 @@ sudo chmod +x post-receive
 On local machine:
 
 ```bash
+project=example_project
 git remote add deploy ssh://pi@jakobmaier.at/srv/git/$project.git/
 git push deploy master
 ```
-
-## Docker
-
-`docker build . -t jakob/web-service`
-
-`docker run -dp 5001:5001 jakob/web-service`
-
-`docker exec -t -i <container id> /bin/bash`
-
-`docker-compose up -d`
-
-`/var/lib/docker/volumes/`
-
-`docker volume create todo-db`
