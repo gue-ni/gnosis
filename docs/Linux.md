@@ -1,8 +1,13 @@
-# Git
+# Linux
 
-| Command | What does it do?               |
-| ------- | ------------------------------ |
-| `chmod` | change file/folder permissions |
+| Command      | What does it do? |
+| ------------ | ---------------- |
+| `groups`     |                  |
+| `chmod`      |                  |
+| `chown`      | change owner     |
+| `traceroute` |                  |
+| `sshuttle`   |                  |
+| `dig`        | dns info         |
 
 ## ssh disallow root login
 

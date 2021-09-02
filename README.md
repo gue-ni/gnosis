@@ -39,7 +39,7 @@ sudo mkdir -p /srv/www/
 sudo chgrp -R www-data /srv
 sudo chmod -R g+w /srv
 
-project=example_web_service
+project=example_project
 github=https://raw.githubusercontent.com/gue-ni/server/main
 
 # create git repo
@@ -62,6 +62,7 @@ sudo chmod +x post-receive
 On local machine:
 
 ```bash
-git remote add production ssh://pi@jakobmaier.at/srv/git/$project.git/
-git push production master
+project=example_project
+git remote add deploy ssh://pi@jakobmaier.at/srv/git/$project.git/
+git push deploy master
 ```
