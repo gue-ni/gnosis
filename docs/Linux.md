@@ -1,13 +1,16 @@
 # Linux
 
-| Command      | What does it do? |
-| ------------ | ---------------- |
-| `groups`     |                  |
-| `chmod`      |                  |
-| `chown`      | change owner     |
-| `traceroute` |                  |
-| `sshuttle`   |                  |
-| `dig`        | dns info         |
+| Command       | What does it do?         |
+| ------------- | ------------------------ |
+| `groups`      |                          |
+| `chmod`       |                          |
+| `chown`       | change owner             |
+| `traceroute`  |                          |
+| `sshuttle`    |                          |
+| `netdiscover` |                          |
+| `dig`         | dns info                 |
+| `xargs`       | start mutliple processes |
+| `find`        |                          |
 
 ## ssh disallow root login
 
