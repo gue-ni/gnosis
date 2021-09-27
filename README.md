@@ -56,6 +56,7 @@ sudo git config core.sharedRepository group
 cd /srv/git/$project.git/hooks
 wget $github/scripts/post-receive -O /srv/git/$project.git/hooks/post-receive
 sed -i "s/project/$project/g" /srv/git/$project.git/hooks/post-receive
+vi post-receive
 sudo chmod +x post-receive
 ```
 
