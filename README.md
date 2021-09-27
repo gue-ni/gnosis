@@ -64,6 +64,6 @@ On local machine:
 
 ```bash
 project=example_project
-git remote add deploy ssh://pi@jakobmaier.at/srv/git/$project.git/
-git push deploy master
+git remote add production ssh://pi@jakobmaier.at/srv/git/$project.git/
+git push -u production master
 ```
