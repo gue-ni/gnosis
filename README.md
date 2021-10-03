@@ -1,8 +1,6 @@
 # DevOps
 
-## NGINX
-
-### Basic setup
+## NGINX setup
 
 ```bash
 domain=example.com
