@@ -12,6 +12,7 @@
 | `xargs`       | start mutliple processes |
 | `find`        |                          |
 | `tar -czvf ${file}.tar.gz ${folder}`| create tar.gz file | 
+| `rsync -av --exclude-from=exclude-file.txt src_dir/ target_dir` | create backup |
 
 ## ssh disallow root login
 
