@@ -1,18 +1,18 @@
 # Linux
 
-| Command       | What does it do?         |
-| ------------- | ------------------------ |
-| `groups`      |                          |
-| `chmod`       |                          |
-| `chown`       | change owner             |
-| `traceroute`  |                          |
-| `sshuttle`    |                          |
-| `netdiscover` |                          |
-| `dig`         | dns info                 |
-| `xargs`       | start mutliple processes |
-| `find`        |                          |
-| `tar -czvf ${file}.tar.gz ${folder}`| create tar.gz file | 
-| `rsync -av --exclude-from=exclude-file.txt src_dir/ target_dir` | create backup |
+| Command                                                         | What does it do?         |
+| --------------------------------------------------------------- | ------------------------ |
+| `groups`                                                        |                          |
+| `chmod`                                                         |                          |
+| `chown`                                                         | change owner             |
+| `traceroute`                                                    |                          |
+| `sshuttle`                                                      |                          |
+| `netdiscover`                                                   |                          |
+| `dig`                                                           | dns info                 |
+| `xargs`                                                         | start mutliple processes |
+| `find`                                                          |                          |
+| `tar -czvf ${file}.tar.gz ${folder}`                            | create tar.gz file       |
+| `rsync -av --exclude-from=exclude-file.txt src_dir/ target_dir` | create backup            |
 
 ## ssh disallow root login
 
