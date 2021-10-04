@@ -11,6 +11,7 @@
 | `dig`         | dns info                 |
 | `xargs`       | start mutliple processes |
 | `find`        |                          |
+| `tar -czvf ${file}.tar.gz ${folder}`| create tar.gz file | 
 
 ## ssh disallow root login
 
