@@ -16,7 +16,9 @@ cd $TARGET
 
 # Do stuffs, like npm install…
 
-# docker-compose down
-# docker-compose build
-# docker-compose up -d
-
+if test -f "$TARGET/docker-compose.yml"; then
+    echo "found docker-compose.yml"
+    docker-compose down
+    docker-compose build
+    docker-compose up -d
+fi 
