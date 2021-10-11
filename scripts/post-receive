@@ -18,6 +18,6 @@ cd $TARGET
 
 if test -f "docker-compose.yml"; then
     docker-compose down
-    docker-compose build
-    docker-compose up -d
+    docker-compose build 
+    docker-compose up -d --remove-orphans
 fi 
