@@ -15,6 +15,7 @@
 | `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup            |
 | `df`                                                      | files system info        |
 | `du`                                                      | disk usage info          |
+| `split`                                                   | split large files        |
 
 ## ssh disallow root login
 
