@@ -17,7 +17,7 @@ cd $TARGET
 # Do stuffs, like npm install…
 
 if test -f "docker-compose.yml"; then
-    docker-compose down
+    docker-compose down --remove-orphans
     docker-compose build 
-    docker-compose up -d --remove-orphans
+    docker-compose up -d
 fi 
