@@ -15,7 +15,6 @@ git --work-tree=$TARGET --git-dir=$REPO checkout -f
 cd $TARGET
 
 # Build and start the application
-
 if test -f "docker-compose.yml"; then
     docker-compose down --remove-orphans && \
     docker-compose build && \
