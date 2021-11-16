@@ -1,15 +1,14 @@
 #!/bin/bash
 
-project=${1}
 github=https://raw.githubusercontent.com/gue-ni/DevOps/main
 
-if [ -z "${project}" ] ; then
+read -p "Project name?" project
+if [ "$project" = "" ]; then
   echo "ERROR: project not set!"
-  echo "Aborting."
   exit 1
 fi
 
-echo "setting up Project:" $project
+echo "Setting up project:" $project
 
 mkdir -p /srv/tmp/
 mkdir -p /srv/www/
