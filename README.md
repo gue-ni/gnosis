@@ -2,7 +2,7 @@
 
 ## NGINX setup
 
-`setup_nginx_server_block.sh`
+`bash <(curl https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_nginx_server_block_for_domain.sh)`
 
 ```bash
 domain=example.com
@@ -32,7 +32,7 @@ nginx -t && nginx -s reload
 
 On server:
 
-`setup_git_deploy.sh`
+`bash <(curl https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_git_deploy_with_post_receive.sh)`
 
 ```bash
 # setup
