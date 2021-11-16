@@ -8,6 +8,8 @@ As root:
 bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_nginx_server_block_for_domain.sh)
 ```
 
+The [script](scripts/setup_nginx_server_block_for_domain.sh).
+
 ## Setup deploy with git using post-receive hooks
 
 On server, as root:
@@ -15,6 +17,8 @@ On server, as root:
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_git_deploy_with_post_receive.sh)
 ```
+
+The [script](scripts/setup_git_deploy_with_post_receive.sh).
 
 On local machine:
 
