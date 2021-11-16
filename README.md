@@ -1,6 +1,6 @@
 # DevOps
 
-## Setup NGINX server block for domain
+## Setup nginx server block for domain
 
 As root:
 
