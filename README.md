@@ -1,16 +1,20 @@
 # DevOps
 
-## NGINX setup
+## Setup NGINX server block for domain
 
 As root:
 
-`bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_nginx_server_block_for_domain.sh)`
+```bash
+bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_nginx_server_block_for_domain.sh)
+```
 
-## Deploy with git post-receive hook
+## Setup deploy with git using post-receive hooks
 
 On server, as root:
 
-`bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_git_deploy_with_post_receive.sh)`
+```bash
+bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_git_deploy_with_post_receive.sh)
+```
 
 On local machine:
 
