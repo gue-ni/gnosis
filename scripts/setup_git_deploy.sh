@@ -1,7 +1,7 @@
 #!/bin/bash
 
 project=${1}
-github=https://raw.githubusercontent.com/gue-ni/server/main
+github=https://raw.githubusercontent.com/gue-ni/DevOps/main
 
 if [ -z "${project}" ] ; then
   echo "ERROR: project not set!"
