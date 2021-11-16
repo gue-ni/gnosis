@@ -1,10 +1,8 @@
 #!/bin/bash
 
-domain=${1}
-
-if [ -z "${domain}" ] ; then
+read -p "Domain?" domain
+if [ "$domain" = "" ]; then
   echo "ERROR: domain not set!"
-  echo "Aborting."
   exit 1
 fi
 
