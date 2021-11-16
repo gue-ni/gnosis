@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 domain=${1}
@@ -9,7 +8,7 @@ if [ -z "${domain}" ] ; then
   exit 1
 fi
 
-github=https://raw.githubusercontent.com/gue-ni/server/main
+github=https://raw.githubusercontent.com/gue-ni/DevOps/main
 
 mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 wget $github/conf/index.html -O /var/www/$domain/index.html
