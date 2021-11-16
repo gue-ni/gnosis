@@ -2,6 +2,8 @@
 
 ## NGINX setup
 
+`setup_nginx_server_block.sh`
+
 ```bash
 domain=example.com
 github=https://raw.githubusercontent.com/gue-ni/server/main
@@ -29,6 +31,8 @@ nginx -t && nginx -s reload
 ## Deploy with git post-receive hook
 
 On server:
+
+`setup_git_deploy.sh`
 
 ```bash
 # setup
