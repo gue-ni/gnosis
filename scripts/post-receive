@@ -2,15 +2,16 @@
 
 # The production directory
 TARGET="/srv/www/project"
+mkdir -p $TARGET
 
 # A temporary directory for deployment
 TEMP="/srv/tmp/project"
+mkdir -p $TEMP
 
 # The Git repo
 REPO="/srv/git/project.git"
 
 # Deploy the content to the temporary directory
-mkdir -p $TARGET
 git --work-tree=$TARGET --git-dir=$REPO checkout -f
 cd $TARGET
 
@@ -21,3 +22,7 @@ if test -f "docker-compose.yml"; then
     docker-compose up -d && \
     docker-compose logs
 fi 
+
+
+
+
