@@ -3,7 +3,6 @@ PetalBot
 bingbot
 Googlebot
 zgrab
-curl
 AhrefsBot
 WhatsApp
 Slurp
@@ -18,4 +17,3 @@ SemrushBot
 CERT.at-Statistics-Survey
 Discordbot
 NetSystemsResearch
-python-requests
