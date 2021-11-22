@@ -16,6 +16,7 @@
 | `df`                                                      | files system info        |
 | `du`                                                      | disk usage info          |
 | `split`                                                   | split large files        |
+| `w`                                                       | logged in users          |
 
 ## ssh disallow root login
 
