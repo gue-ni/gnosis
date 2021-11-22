@@ -12,11 +12,16 @@ KNOWN_BOTS=(
     "Baiduspider"
     "CERT.at-Statistics-Survey"
     "CensysInspect"
+    "curl"
+    "python-requests"
     "Discordbot"
     "DuckDuckBot"
+    "Expanse indexes the network perimeters of our customers."
     "Googlebot"
+    "Go-http-client"
     "Mattermost-Bot"
     "NetSystemsResearch"
+    "okhttp"
     "PetalBot"
     "SemrushBot"
     "Slurp"
@@ -27,11 +32,12 @@ KNOWN_BOTS=(
     "facebot"
     "ia_archiver"
     "zgrab"
+    "Nmap Scripting Engine"
 )
 
 PATTERN="($(echo ${KNOWN_BOTS[@]} | sed 's/ /|/g'))"
 
-grep -i -v -E $PATTERN $ACCESS_LOG
+grep -i -v -E $PATTERN $ACCESS_LOG | grep -E 'HTTP/1.1" (2|3)'
 
 
 
