@@ -24,3 +24,4 @@
 | `git status`                       |                                  |
 | `git branch`                       |                                  |
 | `git init`                         |                                  |
+| `git reset HEAD^`                  | undo last commit, like it never happened                  |
