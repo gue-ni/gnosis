@@ -9,6 +9,7 @@ fi
 
 KNOWN_BOTS=(
     "AhrefsBot"
+    "at-bot"
     "Baiduspider"
     "CERT.at-Statistics-Survey"
     "CensysInspect"
