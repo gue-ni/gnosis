@@ -25,3 +25,16 @@ sudo vi /etc/ssh/sshd_config
 PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
+
+## change hostname
+
+```bash
+# change hostname
+sudo vi /etc/hostname 
+
+# replace all occurrences of old hostname with new
+sudo vi /etc/hosts
+
+# reboot machine
+sudo reboot 
+```
