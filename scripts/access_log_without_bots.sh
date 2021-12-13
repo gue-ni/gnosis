@@ -16,6 +16,7 @@ KNOWN_BOTS=(
     "curl"
     "python-requests"
     "Discordbot"
+    "DotBot"
     "DuckDuckBot"
     "DuckDuckGo-Favicons-Bot"
     "Expanse indexes the network perimeters of our customers."
