@@ -31,6 +31,7 @@ KNOWN_BOTS=(
     "okhttp"
     "PetalBot"
     "python-requests"
+    "rc-crawler"
     "SemrushBot"
     "SeznamBot"
     "Slurp"
