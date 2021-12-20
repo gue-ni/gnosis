@@ -4,7 +4,7 @@ INCLUDE=$1
 EXCLUDE=$2
 SERVER=$3
 
-USAGE="${0} <include file> <exclude file> root@example.com:/backup"
+USAGE="${0} <include file> <exclude file> <host>:<backup directory>"
 
 if [ -z $INCLUDE ] || [ -z $EXCLUDE ] || [ -z $SERVER ]; then
     echo $USAGE
