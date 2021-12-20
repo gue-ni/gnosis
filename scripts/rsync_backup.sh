@@ -1,33 +1,26 @@
 #!/bin/bash
 
-INCLUDE=include.txt
-EXCLUDE=exclude.txt
+INCLUDE=$1
+EXCLUDE=$2
+SERVER=$3
 
-if [ -z $INCLUDE ]; then
-    echo "ERROR: please give include file"
+USAGE="${0} <include file> <exclude file> root@example.com:/backup"
+
+if [ -z $INCLUDE ] || [ -z $EXCLUDE ] || [ -z $SERVER ]; then
+    echo $USAGE
     exit 1 
 fi
 
-if [ -z $EXCLUDE ]; then
-    echo "ERROR: please give exclude file"
-    exit 1 
-fi
-
-PI1=pi1
-TARGET=/media/pi/KINGSTON1/VivoBook/
-
-HOST=$PI1
-SERVER=$HOST:$TARGET
-
-OPTIONS="-rtDviR --delete --modify-window=2 --exclude-from=$EXCLUDE --max-size=100MB"
+#OPTIONS="-rtDviR --delete --modify-window=2 --exclude-from=$EXCLUDE --max-size=100MB"
+OPTIONS="-aviR --exclude-from=$EXCLUDE --max-size=100M --modify-window=2 --no-perms --no-owner --no-group --delete"
 
 LOGDIR=~/logs
-LOGFILE=$LOGDIR/backup_$(date "+%F-%H%M").log
+LOGFILE=$LOGDIR/$(date "+%A").log
 mkdir -p $LOGDIR
 
 while read SRC;
 do
-    echo "###############################################################" | tee -a $LOGFILE
+    echo "############################# $(date) ################################" | tee -a $LOGFILE
     echo $SRC: | tee -a $LOGFILE
     rsync $OPTIONS $SRC $SERVER | tee -a $LOGFILE
 done < $INCLUDE
