@@ -24,6 +24,11 @@
 
 https://docs.docker.com/compose/reference/up/
 
+## UFW
+
+Be carefull, docker overrides ufw (uncomplicated firewall). To disable this behaviour, you need to put
+`{ "iptables": false }` in `/etc/docker/daemon.json`.
+
 ## Links
 
 ### Containerize node.js
