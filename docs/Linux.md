@@ -17,6 +17,7 @@
 | `du`                                                      | disk usage info          |
 | `split`                                                   | split large files        |
 | `w`                                                       | logged in users          |
+| `netstat`, `netstat -tupan`                               | network information      |
 
 ## ssh disallow root login
 
