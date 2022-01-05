@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 read -p "Domain?" domain
 if [ "$domain" = "" ]; then
   echo "ERROR: domain not set!"
@@ -29,7 +31,7 @@ if [ "$CONT" = "n" ]; then
   exit 1
 fi
 
-certbot --nginx -d $domain -d www.$domain -d api.$domain
+certbot --nginx -d $domain
 
 nginx -t && nginx -s reload
 
