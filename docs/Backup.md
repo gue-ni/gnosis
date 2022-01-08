@@ -49,6 +49,9 @@ sudo umount /media/pi/USBDrive
 sudo cryptsetup luksClose USBDrive
 ```
 
+## WSL
+
+If there is a input/output error, try running `wsl.exe --shutdown`.
 
 
 
