@@ -30,6 +30,22 @@ https://docs.docker.com/compose/reference/up/
 Be carefull, docker overrides ufw (uncomplicated firewall). To disable this behaviour, you need to put
 `{ "iptables": false }` in `/etc/docker/daemon.json`.
 
+Always use 
+
+```
+port:
+    - "127.0.0.1:8080:8080"
+```
+
+instead of 
+
+```
+port:
+    - "8080:8080"
+```
+
+This ensures the ports are only accessible from localhost and not from the outside.
+
 ## Links
 
 ### Containerize node.js
