@@ -57,6 +57,8 @@ https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
 ### Postgres
 
+`docker-compose.yml`:
+
 ```
 version: '3.8'
 services:

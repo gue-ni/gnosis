@@ -10,3 +10,4 @@ set showcmd
 set showmode
 set showmatch
 set hlsearch
+syntax on
