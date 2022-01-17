@@ -4,7 +4,7 @@
 | --------------------------------------------------------- | ------------------------ |
 | `groups`                                                  |                          |
 | `chmod`                                                   |                          |
-| `chown`                                                   | change owner             |
+| `chown [OPTIONS] user:user dir/`                                                   | change owner             |
 | `traceroute`                                              |                          |
 | `sshuttle`                                                |                          |
 | `netdiscover`                                             |                          |
