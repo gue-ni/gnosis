@@ -18,6 +18,7 @@
 | `split`                                                   | split large files        |
 | `w`                                                       | logged in users          |
 | `netstat`, `netstat -tupan`                               | network information      |
+| `usermod -aG sudo $username`                               | add user to sudo group  |
 
 ## ssh disallow root login
 
