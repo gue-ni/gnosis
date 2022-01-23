@@ -30,6 +30,7 @@ KNOWN_BOTS=(
     "Nmap Scripting Engine"
     "okhttp"
     "PetalBot"
+    "Project-Resonance"
     "python-requests"
     "rc-crawler"
     "SemrushBot"
