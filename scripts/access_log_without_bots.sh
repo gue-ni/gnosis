@@ -8,9 +8,11 @@ if [ -z $ACCESS_LOG ]; then
 fi
 
 KNOWN_BOTS=(
+    "acebookexternalhit"
     "AhrefsBot"
     "at-bot"
     "Baiduspider"
+    "BLEXBot"
     "BingPreview"
     "CERT.at-Statistics-Survey"
     "CensysInspect"
