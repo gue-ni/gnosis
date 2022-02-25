@@ -25,6 +25,14 @@
 
 https://docs.docker.com/compose/reference/up/
 
+## Truncate large log
+
+Logs can take up a lot of space, this helps to remediate this.
+
+```bash
+sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log
+```
+
 ## UFW
 
 Be carefull, docker overrides ufw (uncomplicated firewall). To disable this behaviour, you need to put
