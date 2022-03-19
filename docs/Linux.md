@@ -4,7 +4,7 @@
 | --------------------------------------------------------- | ------------------------ |
 | `groups`                                                  |                          |
 | `chmod`                                                   |                          |
-| `chown [OPTIONS] user:user dir/`                                                   | change owner             |
+| `chown [OPTIONS] user:user dir/`                          | change owner             |
 | `traceroute`                                              |                          |
 | `sshuttle`                                                |                          |
 | `netdiscover`                                             |                          |
@@ -40,3 +40,13 @@ sudo vi /etc/hosts
 # reboot machine
 sudo reboot 
 ```
+
+## find files older than n days
+
+```bash
+find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
+```
+
+
+
+
