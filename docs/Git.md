@@ -1,5 +1,11 @@
 # Git
 
+## Common Tasks
+
+### Reset to last commit
+
+`git reset --hard HEAD`
+
 ## Links
 
 [The Pro Git Book](https://git-scm.com/book/en/v2)
