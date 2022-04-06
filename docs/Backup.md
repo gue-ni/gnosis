@@ -39,7 +39,7 @@ df -h /media/pi/USBDrive
 ### Mounting: 
 
 ```bash
-sudo cryptsetup luksOpen /dev/sdb USBDrive
+sudo cryptsetup luksOpen /dev/sda1 USBDrive
 sudo mount /dev/mapper/USBDrive /media/pi/USBDrive
 ```
 ### Unmounting: 
