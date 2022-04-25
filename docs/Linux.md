@@ -28,6 +28,12 @@ PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
 
+## get referer with awk
+
+```bash
+cat access.log | awk '{ print $11 }' | sort | uniq
+```
+
 ## change hostname
 
 ```bash
