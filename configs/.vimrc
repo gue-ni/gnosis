@@ -10,4 +10,4 @@ set showmode
 set showmatch
 set hlsearch
 syntax on
-set backspace=indent,eol,start
+set backspace=indent,eol,start " for windows
