@@ -20,6 +20,14 @@
 | `netstat`, `netstat -tupan`                               | network information      |
 | `usermod -aG sudo $username`                               | add user to sudo group  |
 
+## ssh jump hops 
+
+ Connect to the target host by first making a ssh connection to the jump host and then establishing a connection to the ultimate destination from there.
+
+```bash
+ssh -J user@jumphost user@target
+```
+
 ## ssh disallow root login
 
 ```bash
