@@ -10,4 +10,5 @@ set showmode
 set showmatch
 set hlsearch
 syntax on
-set backspace=indent,eol,start " for windows
+set backspace=indent,eol,start      " make backspace work as intended
+map <F5> :!./%<Enter>               " execute current script with F5
