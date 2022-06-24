@@ -1,15 +1,17 @@
 #!/bin/sh
 
+PROJECT=project
+
 # The production directory
-TARGET="/srv/www/project"
+TARGET=/srv/www/$PROJECT
 mkdir -p $TARGET
 
 # A temporary directory for deployment
-TEMP="/srv/tmp/project"
+TEMP=/srv/tmp/$PROJECT
 mkdir -p $TEMP
 
 # The Git repo
-REPO="/srv/git/project.git"
+REPO=/srv/git/$PROJECT.git
 
 # Deploy the content to the temporary directory
 git --work-tree=$TARGET --git-dir=$REPO checkout -f
