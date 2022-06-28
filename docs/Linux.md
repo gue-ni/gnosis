@@ -18,7 +18,8 @@
 | `split`                                                   | split large files        |
 | `w`                                                       | logged in users          |
 | `netstat`, `netstat -tupan`                               | network information      |
-| `usermod -aG sudo $username`                               | add user to sudo group  |
+| `usermod -aG sudo $username`                              | add user to sudo group   |
+| `last`                                                    | show last user activity  |
 
 ## ssh jump hops 
 
