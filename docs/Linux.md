@@ -85,6 +85,8 @@ sudo vi /etc/hosts
 sudo reboot 
 ```
 
+If this does still not work, chnage `preserve_hostname` in the file `/etc/cloud/cloud.cfg` to `true`.
+
 ## find files older than n days
 
 ```bash
