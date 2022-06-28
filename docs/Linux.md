@@ -20,6 +20,35 @@
 | `netstat`, `netstat -tupan`                               | network information      |
 | `usermod -aG sudo $username`                              | add user to sudo group   |
 | `last`                                                    | show last user activity  |
+| ``                                                        |                          |
+
+
+## tmux
+
+
+| Command | What does it do? |
+|---------|------------------|
+| `C-b` | prefix key |
+| `C-b + %` | split vertically |
+| `C-b + "` | split horizontally |
+| `C-b + arrow` |  move between panes |
+| `C-b + c` | Create new window |
+| `C-b + n` | next window |
+| `C-b + p` | previous window |
+| `C-b + $` | rename session |
+| `C-b + d` | detach session |
+| `tmux ls` | list sessions|
+| `tmux attach -t <session>` | attach session |
+
+
+
+## keyboard layout
+
+```bash
+
+
+setxkbmap -layout de -variant us
+```
 
 ## ssh jump hops 
 
