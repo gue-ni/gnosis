@@ -1,19 +1,16 @@
 #!/bin/bash
 
 EXCLUDE_IP=84.113.83.137
+WWW=/var/www/private/goaccess
 
 cd /var/log/nginx/
 
-gzip -d access.*.log.gz
-
-cat access.log | /usr/bin/goaccess - \
+zcat -f access.log access.*.log access.*.log.gz | /usr/bin/goaccess - \
     --ignore-crawlers \
     --agent-list \
     --exclude-ip=$EXCLUDE_IP \
     --log-format='%v %h - %^ [%d:%t %^] "%m %U" %s %b "%R" "%u"' \
     --date-format=%d/%b/%Y \
     --time-format=%H:%M:%S \
-    -o /var/www/private/goaccess/index.html 
-
-gzip access.*.log
+    -o $WWW/index.html 
 
