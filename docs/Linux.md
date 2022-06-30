@@ -22,9 +22,15 @@
 | `last`                                                    | show last user activity  |
 | ``                                                        |                          |
 
+## sed
+
+Add hello to the start of every line:
+
+```bash
+sed -i 's/^/hello /g' file.txt
+```
 
 ## tmux
-
 
 | Command | What does it do? |
 |---------|------------------|
