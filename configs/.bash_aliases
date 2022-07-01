@@ -4,6 +4,8 @@ alias l='ls -l'
 
 # stupid typos
 alias claer='clear'
+alias c='clear'
+
 
 # nginx
 alias reload='nginx -t && nginx -s reload'
