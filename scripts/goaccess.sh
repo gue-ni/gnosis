@@ -5,7 +5,7 @@ WWW=/var/www/private/goaccess
 
 cd /var/log/nginx/
 
-zcat -f access.log access.*.log access.*.log.gz | /usr/bin/goaccess - \
+zcat -f access.*.log.gz access.*.log access.log 2>/dev/null | /usr/bin/goaccess - \
     --ignore-crawlers \
     --agent-list \
     --exclude-ip=$EXCLUDE_IP \

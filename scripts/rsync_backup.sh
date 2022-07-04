@@ -18,9 +18,10 @@ LOGDIR=~/logs
 LOGFILE=$LOGDIR/$(date "+%A").log
 mkdir -p $LOGDIR
 
+echo "############################# $(date) ################################" | tee -a $LOGFILE
 while read SRC;
 do
-    echo "############################# $(date) ################################" | tee -a $LOGFILE
+    echo ""
     echo $SRC: | tee -a $LOGFILE
     rsync $OPTIONS $SRC $SERVER | tee -a $LOGFILE
 done < $INCLUDE
