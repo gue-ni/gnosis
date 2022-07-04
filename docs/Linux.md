@@ -1,5 +1,7 @@
 # Linux
 
+## important commands
+
 | Command                                                   | What does it do?         |
 | --------------------------------------------------------- | ------------------------ |
 | `groups`                                                  |                          |
@@ -23,8 +25,31 @@
 | ``                                                        |                          |
 
 
-## tmux
+## mount usb drive
 
+```bash
+sudo fdisk -l
+
+# output:
+Device     Boot Start       End   Sectors  Size Id Type
+/dev/sda1  *       64 121077759 121077696 57.7G  7 HPFS/NTFS/exFAT
+
+# create mount directory
+mkdir -p /media/usb
+
+# mount usb 
+sudo mount /dev/sda1 /media/usb
+```
+
+## sed
+
+Add hello to the start of every line:
+
+```bash
+sed -i 's/^/hello /g' file.txt
+```
+
+## tmux
 
 | Command | What does it do? |
 |---------|------------------|
@@ -45,8 +70,6 @@
 ## keyboard layout
 
 ```bash
-
-
 setxkbmap -layout de -variant us
 ```
 
@@ -85,9 +108,9 @@ sudo vi /etc/hosts
 sudo reboot 
 ```
 
-If this does still not work, chnage `preserve_hostname` in the file `/etc/cloud/cloud.cfg` to `true`.
+If this does still not work, set `preserve_hostname` in `/etc/cloud/cloud.cfg` to `true`.
 
-## find files older than n days
+## find files older than 7 days and move them to archive
 
 ```bash
 find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
