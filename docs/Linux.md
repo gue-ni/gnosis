@@ -25,6 +25,15 @@
 | ``                                                        |                          |
 
 
+
+
+## vim
+
+### plugins
+
+-   supertab
+-   AutoComplPop
+
 ## mount usb drive
 
 ```bash
@@ -51,31 +60,25 @@ sed -i 's/^/hello /g' file.txt
 
 ## tmux
 
-| Command | What does it do? |
-|---------|------------------|
-| `C-b` | prefix key |
-| `C-b %` | split vertically |
-| `C-b "` | split horizontally |
-| `C-b arrow` |  move between panes |
-| `C-b c` | Create new window |
-| `C-b n` | next window |
-| `C-b p` | previous window |
-| `C-b $` | rename session |
-| `C-b d` | detach session |
-| `tmux ls` | list sessions|
-| `tmux attach -t <session>` | attach session |
+| Command                          | What does it do?             |
+|----------------------------------|------------------------------|
+| `C-b`                            | prefix key                   |
+| `C-b %`                          | split vertically             |
+| `C-b "`                          | split horizontally           |
+| `C-b arrow`                      |  move between panes          |
+| `C-b c`                          | Create new window            |
+| `C-b n`                          | next window                  |
+| `C-b p`                          | previous window              |
+| `C-b $`                          | rename session               |
+| `C-b d`                          | detach session               |
+| `tmux ls`                        | list sessions                |
+| `tmux attach -t <session>`       | attach session               |
 
-
-
-## keyboard layout
-
-```bash
-setxkbmap -layout de -variant us
-```
 
 ## ssh jump hops 
 
- Connect to the target host by first making a ssh connection to the jump host and then establishing a connection to the ultimate destination from there.
+Connect to the target host by first making a ssh connection to the jump host 
+and then establishing a connection to the ultimate destination from there.
 
 ```bash
 ssh -J user@jumphost user@target

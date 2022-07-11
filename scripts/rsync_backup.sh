@@ -12,9 +12,9 @@ if [ -z $INCLUDE ] || [ -z $EXCLUDE ] || [ -z $SERVER ]; then
 fi
 
 #OPTIONS="-rtDviR --delete --modify-window=2 --exclude-from=$EXCLUDE --max-size=100MB"
-OPTIONS="-aviR --exclude-from=$EXCLUDE --max-size=100M --modify-window=2 --no-perms --no-owner --no-group --delete"
+OPTIONS="
 
-LOGDIR=~/logs
+LOGDIR=/var/log/rsync_backup
 LOGFILE=$LOGDIR/$(date "+%A").log
 mkdir -p $LOGDIR
 
@@ -23,5 +23,16 @@ while read SRC;
 do
     echo ""
     echo $SRC: | tee -a $LOGFILE
-    rsync $OPTIONS $SRC $SERVER | tee -a $LOGFILE
+    rsync \
+        -aviR \
+        --exclude-from=$EXCLUDE \
+        --max-size=100M \
+        --modify-window=2 \
+        --no-perms \
+        --no-owner \ 
+        --no-group \
+        --delete \
+        --filter=':- .gitignore' \
+        $SRC $SERVER | tee -a $LOGFILE
+
 done < $INCLUDE
