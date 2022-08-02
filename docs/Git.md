@@ -6,6 +6,10 @@
 
 `git reset --hard HEAD`
 
+## Submodules
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 ## Links
 
 [The Pro Git Book](https://git-scm.com/book/en/v2)
