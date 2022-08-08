@@ -1,3 +1,4 @@
 {
-  "layout": "layouts/markdown.njk"
+	"layout": "layouts/markdown.njk",
+	"tags": "docs"
 }
