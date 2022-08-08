@@ -8,14 +8,14 @@
 
 ## Submodules
 
-https://git-scm.com/book/en/v2/Git-Tools-Submodules
+[Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
 ```
+# add submodule
 git submodule add <repository url>
 
-
+# update local repo with remote changes
 git submodule update --remote 
-
 ```
 
 ## Links
