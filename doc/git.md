@@ -10,7 +10,7 @@
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-```
+```bash
 # add submodule
 git submodule add <repository url>
 
@@ -42,4 +42,12 @@ git submodule update --remote
 | `git status`                       |                                  |
 | `git branch`                       |                                  |
 | `git init`                         |                                  |
-| `git reset HEAD^`                  | undo last commit, like it never happened                  |
+| `git reset HEAD^`                  | undo last commit                 |
+
+## Submodules
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+## Links
+
+[The Pro Git Book](https://git-scm.com/book/en/v2)

@@ -40,14 +40,14 @@ Be carefull, docker overrides ufw (uncomplicated firewall). To disable this beha
 
 Always use 
 
-```
+```yml
 port:
     - "127.0.0.1:8080:8080"
 ```
 
 instead of 
 
-```
+```yml
 port:
     - "8080:8080"
 ```
@@ -67,7 +67,7 @@ https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
 `docker-compose.yml`:
 
-```
+```yml
 version: '3.8'
 services:
   db:
@@ -89,7 +89,7 @@ volumes:
 
 ### Mysql
 
-```
+```yml
 version: '3.1'
 
 services:
