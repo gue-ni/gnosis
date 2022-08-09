@@ -1,0 +1,9 @@
+<h1>Docs</h1>
+
+<ul>
+  {%- for article in collections.docs -%}
+  <li class="my-4">
+    <a href="{{ article.url }}">{{ article.url }}</a>
+  </li>
+  {%- endfor -%}
+</ul>

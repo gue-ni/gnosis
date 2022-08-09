@@ -1,0 +1,4 @@
+{
+	"layout": "layouts/markdown.njk",
+	"tags": "docs"
+}

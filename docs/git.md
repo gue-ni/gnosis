@@ -6,6 +6,22 @@
 
 `git reset --hard HEAD`
 
+## Submodules
+
+[Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+```
+# add submodule
+git submodule add <repository url>
+
+# update local repo with remote changes
+git submodule update --remote 
+```
+
+## Links
+
+[The Pro Git Book](https://git-scm.com/book/en/v2)
+
 | Command                            | What does it do?                 |
 | ---------------------------------- | -------------------------------- |
 | `git remote set-url <name> <url>`  | change remote url                |
