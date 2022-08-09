@@ -10,7 +10,7 @@
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
-```
+```bash
 # add submodule
 git submodule add <repository url>
 
