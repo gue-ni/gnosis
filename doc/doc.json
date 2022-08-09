@@ -1,4 +1,4 @@
 {
 	"layout": "layouts/markdown.njk",
-	"tags": "docs"
+	"tags": "doc"
 }
