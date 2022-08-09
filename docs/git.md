@@ -6,14 +6,6 @@
 
 `git reset --hard HEAD`
 
-## Submodules
-
-https://git-scm.com/book/en/v2/Git-Tools-Submodules
-
-## Links
-
-[The Pro Git Book](https://git-scm.com/book/en/v2)
-
 | Command                            | What does it do?                 |
 | ---------------------------------- | -------------------------------- |
 | `git remote set-url <name> <url>`  | change remote url                |
@@ -34,4 +26,12 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 | `git status`                       |                                  |
 | `git branch`                       |                                  |
 | `git init`                         |                                  |
-| `git reset HEAD^`                  | undo last commit, like it never happened                  |
+| `git reset HEAD^`                  | undo last commit                 |
+
+## Submodules
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+## Links
+
+[The Pro Git Book](https://git-scm.com/book/en/v2)
