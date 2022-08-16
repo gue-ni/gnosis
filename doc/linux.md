@@ -143,3 +143,11 @@ On local machine:
 git remote add production ssh://root@jakobmaier.at/srv/git/project.git/
 git push -u production master
 ```
+
+### close connection without response
+
+```bash
+return 444;
+```
+
+
