@@ -1,14 +1,12 @@
 # Misc
 
-## Glossary
+## popular hackernews abbreviations
 
 | abbreviation | meaning                                      |
 | ------------ | -------------------------------------------- |
 | PEBKAC       | Problem exists between keyboard and computer |
 | YMMV         | Your mileage may vary                        |
-
-
-
+| SOL          | shit outta luck                              |
 
 https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
 
