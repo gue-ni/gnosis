@@ -115,7 +115,9 @@ If this does still not work, set `preserve_hostname` in `/etc/cloud/cloud.cfg` t
 find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
 ```
 
-## Setup nginx server block for domain
+## nginx
+
+### Setup nginx server block for domain
 
 As root:
 
@@ -125,7 +127,7 @@ bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setu
 
 The [script](scripts/setup_nginx_server_block_for_domain.sh).
 
-## Setup deploy with git using post-receive hooks
+### Setup deploy with git using post-receive hooks
 
 On server, as root:
 
