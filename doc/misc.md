@@ -8,6 +8,7 @@
 | YMMV         | Your mileage may vary                        |
 | SOL          | shit outta luck                              |
 
-https://github.com/EnterpriseQualityCoding/FizzBuzzEnterpriseEdition
+## chrome
 
-https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html
+Open Task manager: `Shift + Esc`
+

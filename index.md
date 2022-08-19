@@ -6,4 +6,4 @@ layout: layouts/markdown.njk
 
 Useful commands, scripts, config files etc.
 
-[doc](doc/)
+[Documentation](doc/)
