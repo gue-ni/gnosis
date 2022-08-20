@@ -57,7 +57,7 @@ sed -i 's/^/hello /g' file.txt
 
 ## tmux
 
-### ssh into tmux
+### ssh straight into tmux
 
 ```bash
 Host jakobmaier.at
