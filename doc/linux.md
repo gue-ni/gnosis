@@ -57,6 +57,18 @@ sed -i 's/^/hello /g' file.txt
 
 ## tmux
 
+### ssh into tmux
+
+```bash
+Host jakobmaier.at
+    HostName 192.168.0.1
+    User root
+    RequestTTY yes
+    RemoteCommand tmux new -A -s default
+```
+
+### commands
+
 | Command                    | What does it do?   |
 | -------------------------- | ------------------ |
 | `C-b`                      | prefix key         |
