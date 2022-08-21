@@ -1,6 +1,6 @@
 # Linux
 
-## Table of Content
+## Table of Contents
 
 - [Bash](#bash)
 - [Vim](#vim)
