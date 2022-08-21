@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>It Works!</title>
+		<style>
+			body {
+				max-width: 650px;
+				margin: 40px auto;
+				padding: 0 10px;
+				font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+					"Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+					"Noto Color Emoji";
+				color: #444;
+				background: #eeeeee;
+			}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It Works!</title>
-    <style>
-        body {
-            max-width: 650px;
-            margin: 40px auto;
-            padding: 0 10px;
-            font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            color: #444;
-            background: #eeeeee;
-        }
+			h1,
+			h2,
+			h3 {
+				line-height: 1.2;
+			}
 
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2;
-        }
+			@media (prefers-color-scheme: dark) {
+				body {
+					color: #ccc;
+					background: black;
+				}
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: #ccc;
-                background: black;
-            }
+				a:link {
+					color: #5bf;
+				}
 
-            a:link {
-                color: #5bf;
-            }
+				a:visited {
+					color: #ccf;
+				}
+			}
+		</style>
+	</head>
 
-            a:visited {
-                color: #ccf;
-            }
-        }
-    </style>
-
-</head>
-
-<body>
-    <h1>It works!</h1>
-    <p>example.com is online.</p>
-</body>
-
+	<body>
+		<h1>It works!</h1>
+		<p>example.com is online.</p>
+	</body>
 </html>

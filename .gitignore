@@ -1,2 +1,7 @@
 .env
 tmp/
+include.txt
+exclude.txt
+scripts/daily_visitors.sh
+scripts/tmp.txt
+notes.md

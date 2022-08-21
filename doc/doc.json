@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/markdown.njk",
+	"tags": "doc",
+	"prism": true
+}

@@ -1,5 +1,27 @@
 # Git
 
+## Common Tasks
+
+### Reset to last commit
+
+`git reset --hard HEAD`
+
+### Reset file to last commit
+
+`git restore <file>`
+
+## Submodules
+
+[Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
+```bash
+# add submodule
+git submodule add <repository url>
+
+# update local repo with remote changes
+git submodule update --remote 
+```
+
 ## Links
 
 [The Pro Git Book](https://git-scm.com/book/en/v2)
@@ -24,3 +46,12 @@
 | `git status`                       |                                  |
 | `git branch`                       |                                  |
 | `git init`                         |                                  |
+| `git reset HEAD^`                  | undo last commit                 |
+
+## Submodules
+
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+## Links
+
+[The Pro Git Book](https://git-scm.com/book/en/v2)
