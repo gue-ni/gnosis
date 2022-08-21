@@ -2,34 +2,34 @@
 
 ## commands
 
-| Command                                                   | What does it do?         |
-| --------------------------------------------------------- | ------------------------ |
-| `groups`                                                  |                          |
-| `chmod`                                                   |                          |
-| `chown [OPTIONS] user:user dir/`                          | change owner             |
-| `traceroute`                                              |                          |
-| `sshuttle`                                                |                          |
-| `netdiscover`                                             |                          |
-| `dig`                                                     | dns info                 |
-| `xargs`                                                   | start mutliple processes |
-| `find`                                                    |                          |
-| `tar -czvf ${file}.tar.gz ${folder}`                      | create tar.gz file       |
-| `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup            |
-| `df`                                                      | files system info        |
-| `du`                                                      | disk usage info          |
-| `split`                                                   | split large files        |
-| `w`                                                       | logged in users          |
-| `netstat`, `netstat -tupan`                               | network information      |
-| `usermod -aG sudo $username`                              | add user to sudo group   |
-| `last`                                                    | show last user activity  |
-| ``                                                        |                          |
+| Command                                                   | What does it do?           |
+| --------------------------------------------------------- | -------------------------- |
+| `groups`                                                  |                            |
+| `chmod`                                                   |                            |
+| `chown [OPTIONS] user:user dir/`                          | change owner               |
+| `traceroute`                                              |                            |
+| `sshuttle`                                                |                            |
+| `netdiscover`                                             |                            |
+| `dig`                                                     | dns info                   |
+| `xargs`                                                   | start mutliple processes   |
+| `find`                                                    |                            |
+| `tar -czvf ${file}.tar.gz ${folder}`                      | create tar.gz file         |
+| `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup              |
+| `df`                                                      | files system info          |
+| `du`                                                      | disk usage info            |
+| `split`                                                   | split large files          |
+| `w`                                                       | logged in users            |
+| `netstat`, `netstat -tupan`                               | network information        |
+| `usermod -aG sudo $username`                              | add user to sudo group     |
+| `last`                                                    | show last user activity    |
+| `neofetch`                                                | display system information |
 
 ## vim
 
 ### plugins
 
-- supertab
-- AutoComplPop
+-   supertab
+-   AutoComplPop
 
 ## mount usb drive
 
@@ -161,5 +161,3 @@ git push -u production master
 ```bash
 return 444;
 ```
-
-
