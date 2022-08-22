@@ -26,6 +26,13 @@
 
 ## vim
 
+### Commands
+
+| Command | What does it do? |
+|--------------------|----------------------------------|
+| :Ex     | File Explorer    |
+| :Vex     | Split File Explorer    |
+
 ### plugins
 
 -   supertab
