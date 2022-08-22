@@ -1,6 +1,13 @@
-# Java
+# Dev
 
-## Eclipse
+## Table of Contents
+
+- [Java](#java)
+- [C++](#cpp)
+
+## Java
+
+### Eclipse
 
 | shortcut           | effect         |
 | ------------------ | -------------- |
@@ -9,3 +16,11 @@
 | `ctrl + shift + g` | find usages    |
 | `ctrl + t`         | type hierarchy |
 | `ctr + shift + r`  | open resource  |
+
+## Cpp
+
+### Visual Studio 2022
+
+| shortcut | effect |
+| -------- | ------ |
+|          |        |

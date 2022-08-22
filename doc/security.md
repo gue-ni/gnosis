@@ -1,6 +1,6 @@
 # Security
 
-## encrypt file with openssl
+## Encrypt File with Openssl
 
 ```bash
 # encrypt
@@ -10,7 +10,7 @@ openssl enc -e -aes-256-cbc -base64 -pbkdf2 -in text.plain -out text.enc
 openssl enc -d -aes-256-cbc -base64 -pbkdf2 -in text.enc -out text.dec
 ```
 
-## check for sql injection
+## Check for SQL Injection
 
 ```sql
 SELECT * FROM table WAITFOR DELAY '00:00:20'
