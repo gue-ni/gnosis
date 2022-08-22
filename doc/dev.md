@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Java](#java)
-- [C++](#c++)
+- [C++](#cpp)
 
 ## Java
 
@@ -17,6 +17,10 @@
 | `ctrl + t`         | type hierarchy |
 | `ctr + shift + r`  | open resource  |
 
-## C++
+## Cpp
 
 ### Visual Studio 2022
+
+| shortcut | effect |
+| -------- | ------ |
+|          |        |
