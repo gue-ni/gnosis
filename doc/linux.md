@@ -1,61 +1,47 @@
 # Linux
 
-## commands
+## Table of Contents
 
-| Command                                                   | What does it do?         |
-| --------------------------------------------------------- | ------------------------ |
-| `groups`                                                  |                          |
-| `chmod`                                                   |                          |
-| `chown [OPTIONS] user:user dir/`                          | change owner             |
-| `traceroute`                                              |                          |
-| `sshuttle`                                                |                          |
-| `netdiscover`                                             |                          |
-| `dig`                                                     | dns info                 |
-| `xargs`                                                   | start mutliple processes |
-| `find`                                                    |                          |
-| `tar -czvf ${file}.tar.gz ${folder}`                      | create tar.gz file       |
-| `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup            |
-| `df`                                                      | files system info        |
-| `du`                                                      | disk usage info          |
-| `split`                                                   | split large files        |
-| `w`                                                       | logged in users          |
-| `netstat`, `netstat -tupan`                               | network information      |
-| `usermod -aG sudo $username`                              | add user to sudo group   |
-| `last`                                                    | show last user activity  |
-| ``                                                        |                          |
+- [Bash](#bash)
+- [Vim](#vim)
+- [SSH](#ssh)
+- [Tmux](#tmux)
+- [Nginx](#nginx)
 
-## vim
+## Bash
+
+| Command                                                   | What does it do?           |
+| --------------------------------------------------------- | -------------------------- |
+| `groups`                                                  |                            |
+| `chmod`                                                   |                            |
+| `chown [OPTIONS] user:user dir/`                          | change owner               |
+| `traceroute`                                              |                            |
+| `sshuttle`                                                |                            |
+| `netdiscover`                                             |                            |
+| `dig`                                                     | dns info                   |
+| `xargs`                                                   | start mutliple processes   |
+| `find`                                                    |                            |
+| `tar -czvf ${file}.tar.gz ${folder}`                      | create tar.gz file         |
+| `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup              |
+| `df`                                                      | files system info          |
+| `du`                                                      | disk usage info            |
+| `split`                                                   | split large files          |
+| `w`                                                       | logged in users            |
+| `netstat`, `netstat -tupan`                               | network information        |
+| `usermod -aG sudo $username`                              | add user to sudo group     |
+| `last`                                                    | show last user activity    |
+| `neofetch`                                                | display system information |
+
+## Vim
 
 ### plugins
 
-- supertab
-- AutoComplPop
+-   supertab
+-   AutoComplPop
 
-## mount usb drive
 
-```bash
-sudo fdisk -l
 
-# output:
-Device     Boot Start       End   Sectors  Size Id Type
-/dev/sda1  *       64 121077759 121077696 57.7G  7 HPFS/NTFS/exFAT
-
-# create mount directory
-mkdir -p /media/usb
-
-# mount usb
-sudo mount /dev/sda1 /media/usb
-```
-
-## sed
-
-Add hello to the start of every line:
-
-```bash
-sed -i 's/^/hello /g' file.txt
-```
-
-## tmux
+## Tmux
 
 | Command                    | What does it do?   |
 | -------------------------- | ------------------ |
@@ -71,7 +57,9 @@ sed -i 's/^/hello /g' file.txt
 | `tmux ls`                  | list sessions      |
 | `tmux attach -t <session>` | attach session     |
 
-## ssh jump hops
+## SSH
+
+### ssh jump hops
 
 Connect to the target host by first making a ssh connection to the jump host
 and then establishing a connection to the ultimate destination from there.
@@ -80,7 +68,15 @@ and then establishing a connection to the ultimate destination from there.
 ssh -J user@jumphost user@target
 ```
 
-## ssh disallow root login
+### ssh straight into tmux
+
+```bash
+Host *
+    RequestTTY yes
+    RemoteCommand tmux new -A -s default
+```
+
+### ssh disallow root login
 
 ```bash
 sudo vi /etc/ssh/sshd_config
@@ -115,7 +111,7 @@ If this does still not work, set `preserve_hostname` in `/etc/cloud/cloud.cfg` t
 find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
 ```
 
-## nginx
+## Nginx
 
 ### Setup nginx server block for domain
 
@@ -150,4 +146,26 @@ git push -u production master
 return 444;
 ```
 
+## mount usb drive
 
+```bash
+sudo fdisk -l
+
+# output:
+Device     Boot Start       End   Sectors  Size Id Type
+/dev/sda1  *       64 121077759 121077696 57.7G  7 HPFS/NTFS/exFAT
+
+# create mount directory
+mkdir -p /media/usb
+
+# mount usb
+sudo mount /dev/sda1 /media/usb
+```
+
+## sed
+
+Add hello to the start of every line:
+
+```bash
+sed -i 's/^/hello /g' file.txt
+```

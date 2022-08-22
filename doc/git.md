@@ -6,6 +6,10 @@
 
 `git reset --hard HEAD`
 
+### Reset file to last commit
+
+`git restore <file>`
+
 ## Submodules
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
