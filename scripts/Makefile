@@ -1,7 +1,8 @@
 # A simple Makefile
 # Usage:
-# make 
-# make clean
+# > make 
+# or
+# > make clean
 
 CC = gcc
 
