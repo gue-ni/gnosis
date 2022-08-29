@@ -16,6 +16,7 @@
 | `ctrl + shift + g` | find usages    |
 | `ctrl + t`         | type hierarchy |
 | `ctr + shift + r`  | open resource  |
+| `ctr + shift + o`  | clean up file  |
 
 ## Cpp
 
@@ -24,3 +25,5 @@
 | shortcut | effect |
 | -------- | ------ |
 |          |        |
+
+### VS Code

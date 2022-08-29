@@ -10,43 +10,42 @@
 
 ## Bash
 
-| Command                                                   | What does it do?           |
-| --------------------------------------------------------- | -------------------------- |
-| `groups`                                                  |                            |
-| `chmod`                                                   |                            |
-| `chown [OPTIONS] user:user dir/`                          | change owner               |
-| `traceroute`                                              |                            |
-| `sshuttle`                                                |                            |
-| `netdiscover`                                             |                            |
-| `dig`                                                     | dns info                   |
-| `xargs`                                                   | start mutliple processes   |
-| `find`                                                    |                            |
-| `tar -czvf ${file}.tar.gz ${folder}`                      | create tar.gz file         |
-| `rsync -av --exclude-from=ignore.txt src_dir/ target_dir` | create backup              |
-| `df`                                                      | files system info          |
-| `du`                                                      | disk usage info            |
-| `split`                                                   | split large files          |
-| `w`                                                       | logged in users            |
-| `netstat`, `netstat -tupan`                               | network information        |
-| `usermod -aG sudo $username`                              | add user to sudo group     |
-| `last`                                                    | show last user activity    |
-| `neofetch`                                                | display system information |
+| Command                      | What does it do?           |
+| ---------------------------- | -------------------------- |
+| `groups`                     |                            |
+| `chmod`                      |                            |
+| `chown`                      | change owner               |
+| `traceroute`                 |                            |
+| `sshuttle`                   |                            |
+| `netdiscover`                |                            |
+| `dig`                        | dns info                   |
+| `xargs`                      | start mutliple processes   |
+| `find`                       |                            |
+| `tar -czvf`                  | create tar.gz file         |
+| `rsync`                      | create backup              |
+| `df`                         | files system info          |
+| `du`                         | disk usage info            |
+| `split`                      | split large files          |
+| `w`                          | logged in users            |
+| `netstat`, `netstat -tupan`  | network information        |
+| `usermod -aG sudo $username` | add user to sudo group     |
+| `last`                       | show last user activity    |
+| `neofetch`                   | display system information |
 
 ## Vim
 
 ### Commands
 
-| Command | What does it do? |
-|--------------------|----------------------------------|
-| :Ex     | File Explorer    |
-| :Vex     | Split File Explorer    |
+| Command      | What does it do?    |
+| ------------ | ------------------- |
+| :Ex          | File Explorer       |
+| :Vex         | Split File Explorer |
+| :s/old/new/g | Replace in lines    |
 
 ### plugins
 
--   supertab
--   AutoComplPop
-
-
+- supertab
+- AutoComplPop
 
 ## Tmux
 
