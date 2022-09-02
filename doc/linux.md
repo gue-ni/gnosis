@@ -175,3 +175,9 @@ Add hello to the start of every line:
 ```bash
 sed -i 's/^/hello /g' file.txt
 ```
+
+## redirect `stderr` to `stdout`
+
+```bash
+command > file 2>&1
+```
