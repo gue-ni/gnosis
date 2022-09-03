@@ -1,10 +1,13 @@
-CC = g++
-CPPFLAGS = -Wall -Werror -I include --std=c++17
-CFLAGS = 
+# 2022-09-03
 
-SRC = $(wildcard src/*.cpp)
-HEADERS = $(wildcard include/*.h)
-OBJ = $(patsubst src/%.cpp, build/%.o, $(SRC))
+CC 				= g++
+CPPFLAGS 	= -Wall -Werror --std=c++17 -Iinclude 
+
+SRC 			= $(wildcard src/*.cpp)
+HEADERS 	= $(wildcard include/*.h)
+OBJ 			= $(patsubst src/%.cpp, build/%.o, $(SRC))
+
+CPPFLAGS 	+= -pthread
 
 APP = sandbox
 
@@ -12,11 +15,11 @@ APP = sandbox
 
 all: $(APP) 
 
-$(APP): ${OBJ}
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ $<
+$(APP): $(OBJ)
+	$(CC) $(CPPFLAGS) -o $@ $^
 
-build/%.o: src/%.cpp ${HEADERS}
-	$(CC) $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+build/%.o: src/%.cpp $(HEADERS)
+	$(CC) $(CPPFLAGS) -c -o $@ $<
 
 clean:
 	rm -f $(APP) build/*.o 
