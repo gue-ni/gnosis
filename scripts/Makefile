@@ -1,23 +1,27 @@
-# A simple Makefile
-# Usage:
-# > make 
-# or
-# > make clean
+# 2022-09-03
 
-CC = gcc
+CC 				= g++
+CPPFLAGS 	= -Wall -Werror --std=c++17 -Iinclude 
+
+SRC 			= $(wildcard src/*.cpp)
+HEADERS 	= $(wildcard include/*.h)
+OBJ 			= $(patsubst src/%.cpp, build/%.o, $(SRC))
+
+CPPFLAGS 	+= -pthread
+
+APP = sandbox
 
 .PHONY: all clean
 
-BIN = hello
+all: $(APP) 
 
-all: $(BIN)
+$(APP): $(OBJ)
+	$(CC) $(CPPFLAGS) -o $@ $^
+
+build/%.o: src/%.cpp $(HEADERS)
+	$(CC) $(CPPFLAGS) -c -o $@ $<
 
 clean:
-	rm -f *.o $(BIN)
+	rm -f $(APP) build/*.o 
 
-%: %.o
-	$(CC) -o $@ $^
-
-%.o: %.c
-	$(CC) -c -o $@ $<
 
