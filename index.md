@@ -6,7 +6,7 @@ layout: layouts/markdown.njk
 
 Useful commands, scripts, config files etc.
 
-## [Documentation](doc/)
+### [-> Useful Knowledge](doc/)
 
-## [Books](books/)
+### [-> Books](books/)
 
