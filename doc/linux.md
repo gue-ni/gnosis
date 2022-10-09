@@ -59,6 +59,7 @@
 | `C-b n`                    | next window        |
 | `C-b p`                    | previous window    |
 | `C-b $`                    | rename session     |
+| `C-b w`                    | widnow mode        |
 | `C-b d`                    | detach session     |
 | `tmux ls`                  | list sessions      |
 | `tmux attach -t <session>` | attach session     |
