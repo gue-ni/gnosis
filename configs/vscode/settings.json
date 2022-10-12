@@ -1,10 +1,13 @@
 {
-    "vim.useSystemClipboard": true,
-    "editor.lineNumbers": "relative",
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-	"files.autoSave": "onFocusChange",
-    "workbench.editor.enablePreview": false
-
+  "vim.useSystemClipboard": true,
+  "editor.lineNumbers": "relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.autoSave": "onFocusChange",
+  "workbench.editor.enablePreview": false,
+  "files.associations": {
+    "*.njk": "html",
+    "*.ejs": "html"
+  }
 }

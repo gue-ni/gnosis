@@ -2,8 +2,14 @@
 
 ## Table of Contents
 
+<<<<<<< HEAD
 -   [Java](#java)
 -   [C++](#cpp)
+=======
+- [Java](#java)
+- [C++](#cpp)
+- [C](#c)
+>>>>>>> 950cfce79306c3c19939febc548cd8e5b936fe03
 
 ## Java
 
@@ -16,6 +22,7 @@
 | `ctrl + shift + g` | find usages    |
 | `ctrl + t`         | type hierarchy |
 | `ctr + shift + r`  | open resource  |
+| `ctr + shift + o`  | clean up file  |
 
 ## Cpp
 
@@ -35,3 +42,41 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 
 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' 
+| shortcut | effect |
+| -------- | ------ |
+|          |        |
+
+### VS Code
+
+## C
+
+### File Sections
+
+File sections are useful for better readability.
+
+
+```c
+/* file.h */
+/*==================[inclusions]============================================*/
+/*==================[macros]================================================*/
+/*==================[type definitions]======================================*/
+/*==================[external constants]====================================*/
+/*==================[external data]=========================================*/
+/*==================[external function declarations]========================*/
+```
+
+```c
+/* file.c */
+/*==================[inclusions]============================================*/
+/*==================[macros]================================================*/
+/*==================[type definitions]======================================*/
+/*==================[internal function declarations]========================*/
+/*==================[external constants]====================================*/
+/*==================[internal constants]====================================*/
+/*==================[external data]=========================================*/
+/*==================[internal data]=========================================*/
+/*==================[external function definitions]=========================*/
+/*==================[internal function definitions]=========================*/
+```
+
+

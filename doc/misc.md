@@ -10,5 +10,12 @@
 
 ## chrome
 
-Open Task manager: `Shift + Esc`
+| Function          | Shortcut      |
+| ----------------- | ------------- |
+| Open Task manager | `Shift + Esc` |
 
+## Spotify
+
+| Function   | Shortcut       |
+| ---------- | -------------- |
+| Next track | `Ctrl + Right` |
