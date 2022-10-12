@@ -2,14 +2,9 @@
 
 ## Table of Contents
 
-<<<<<<< HEAD
--   [Java](#java)
--   [C++](#cpp)
-=======
 - [Java](#java)
 - [C++](#cpp)
 - [C](#c)
->>>>>>> 950cfce79306c3c19939febc548cd8e5b936fe03
 
 ## Java
 
@@ -48,7 +43,7 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 
 ### VS Code
 
-## C
+## C / C++
 
 ### File Sections
 
