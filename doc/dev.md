@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [Java](#java)
-- [C++](#cpp)
+-   [Java](#java)
+-   [C++](#cpp)
 
 ## Java
 
@@ -21,6 +21,17 @@
 
 ### Visual Studio 2022
 
-| shortcut | effect |
-| -------- | ------ |
-|          |        |
+https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recommendations&view=vs-2022
+
+| shortcut             | effect                              |
+| -------------------- | ----------------------------------- |
+| `Ctrl + Q, Ctrl + T` | Search for files, types and members |
+| ``                   |                                     |
+| ``                   |                                     |
+| ``                   |                                     |
+| ``                   |                                     |
+
+
+
+'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
+'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' 
