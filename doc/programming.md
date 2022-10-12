@@ -3,7 +3,7 @@
 ## Table of Contents
 
 -   [Java](#java)
--   [C & C++](#cpp)
+-   [C / C++](#cpp)
 
 ## Java
 
@@ -20,7 +20,9 @@
 
 ## Cpp
 
-### Visual Studio 2022
+### Editors
+
+#### Visual Studio 2022
 
 https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recommendations&view=vs-2022
 
@@ -32,7 +34,15 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
 
-### VS Code
+#### VS Code
+
+`c_cpp_properties.json`:
+```json
+{
+  
+}
+
+```
 
 ### File Sections
 
