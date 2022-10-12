@@ -1,10 +1,9 @@
-# Dev
+# Programming
 
 ## Table of Contents
 
-- [Java](#java)
-- [C++](#cpp)
-- [C](#c)
+-   [Java](#java)
+-   [C & C++](#cpp)
 
 ## Java
 
@@ -29,43 +28,22 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 | -------------------- | ----------------------------------- |
 | `Ctrl + Q, Ctrl + T` | Search for files, types and members |
 | ``                   |                                     |
-| ``                   |                                     |
-| ``                   |                                     |
-| ``                   |                                     |
-
-
 
 'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
-'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease' 
-| shortcut | effect |
-| -------- | ------ |
-|          |        |
+'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
 
 ### VS Code
-
-## C / C++
 
 ### File Sections
 
 File sections are useful for better readability.
 
-
 ```c
-/* file.h */
-/*==================[inclusions]============================================*/
-/*==================[macros]================================================*/
-/*==================[type definitions]======================================*/
-/*==================[external constants]====================================*/
-/*==================[external data]=========================================*/
-/*==================[external function declarations]========================*/
-```
-
-```c
-/* file.c */
 /*==================[inclusions]============================================*/
 /*==================[macros]================================================*/
 /*==================[type definitions]======================================*/
 /*==================[internal function declarations]========================*/
+/*==================[external function declarations]========================*/
 /*==================[external constants]====================================*/
 /*==================[internal constants]====================================*/
 /*==================[external data]=========================================*/
@@ -73,5 +51,3 @@ File sections are useful for better readability.
 /*==================[external function definitions]=========================*/
 /*==================[internal function definitions]=========================*/
 ```
-
-
