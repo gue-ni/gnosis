@@ -46,6 +46,7 @@
 | C-u | go up half a page |
 | C-d | go down half a page |
 | % | jump to closing bracket |
+| :find | search for file |
 
 
 
