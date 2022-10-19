@@ -41,6 +41,17 @@
 | :Ex          | File Explorer       |
 | :Vex         | Split File Explorer |
 | :s/old/new/g | Replace in lines    |
+| dt<character> | delete up to <character> |
+| cw | delete word and go into insert mode |
+| C-u | go up half a page |
+| C-d | go down half a page |
+| % | jump to closing bracket |
+
+
+
+### Implement VSCode's Ctrl+P in Vim
+
+
 
 ### plugins
 
@@ -49,20 +60,20 @@
 
 ## Tmux
 
-| Command                    | What does it do?   |
-| -------------------------- | ------------------ |
-| `C-b`                      | prefix key         |
-| `C-b %`                    | split vertically   |
-| `C-b "`                    | split horizontally |
-| `C-b arrow`                | move between panes |
-| `C-b c`                    | Create new window  |
-| `C-b n`                    | next window        |
-| `C-b p`                    | previous window    |
-| `C-b $`                    | rename session     |
-| `C-b w`                    | widnow mode        |
-| `C-b d`                    | detach session     |
-| `tmux ls`                  | list sessions      |
-| `tmux attach -t <session>` | attach session     |
+| Command                                       | What does it do?   |
+| ----------------------------------------------| ------------------ |
+| `C-b`                                         | prefix key         |
+| `C-b %`                                       | split vertically   |
+| `C-b "`                                       | split horizontally |
+| `C-b arrow`                                   | move between panes |
+| `C-b c`                                       | Create new window  |
+| `C-b n`                                       | next window        |
+| `C-b p`                                       | previous window    |
+| `C-b $`                                       | rename session     |
+| `C-b w`                                       | widnow mode        |
+| `C-b d`                                       | detach session     |
+| `tmux ls`                                     | list sessions      |
+| `tmux attach-session -t <session>`            | attach session     |
 
 ## SSH
 

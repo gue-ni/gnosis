@@ -10,6 +10,12 @@
 
 `git restore <file>`
 
+### Get Short Commit Hash
+
+```bash
+commithash=$(git log -1 --pretty=format:%h)
+```
+
 ## Submodules
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
