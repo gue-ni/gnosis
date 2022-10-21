@@ -22,6 +22,8 @@
 | `docker-compose ps`                     | list running docker containers |
 | `docker-compose logs -f`                | show logs                      |
 | `docker-compose exec <container> sh`    | open shell in container        |
+|`docker-compose down --rmi all --volumes`| stop and remove containers, networks, images and volumes |
+| `docker-compose ps` ||
 
 https://docs.docker.com/compose/reference/up/
 
