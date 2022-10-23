@@ -189,8 +189,16 @@ Add hello to the start of every line:
 sed -i 's/^/hello /g' file.txt
 ```
 
-## redirect `stderr` to `stdout`
+## redirect stderr to stdout
 
 ```bash
 command > file 2>&1
+```
+
+## Disk Usage
+
+```bash
+# print size of current directory
+du -sh .
+> 17G
 ```
