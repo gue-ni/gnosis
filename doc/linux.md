@@ -31,7 +31,7 @@
 | `usermod -aG sudo $username` | add user to sudo group     |
 | `last`                       | show last user activity    |
 | `neofetch`                   | display system information |
-| `ncdu`                       | show disk usage            |
+| `ncdu --si`                  | show disk usage            |
 
 ## Vim
 
