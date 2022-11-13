@@ -10,6 +10,7 @@
 | `docker run -dp 3000:3000 <tag>`      | run container                  |
 | `docker exec -it <container> /bin/sh` | open shell in container        |
 | `docker kill <container>`             | kill container                 |
+| `docker system prune --volumes`       | remove unused objects          |
 
 ## docker-compose
 
