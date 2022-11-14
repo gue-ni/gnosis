@@ -32,6 +32,7 @@
 | `last`                       | show last user activity    |
 | `neofetch`                   | display system information |
 | `ncdu --si`                  | show disk usage            |
+| `journalctl --vacuum-size=500M` | clean up journal        |
 
 ## Vim
 
