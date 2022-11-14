@@ -10,45 +10,48 @@
 
 ## Bash
 
-| Command                      | What does it do?           |
-| ---------------------------- | -------------------------- |
-| `groups`                     |                            |
-| `chmod`                      |                            |
-| `chown`                      | change owner               |
-| `traceroute`                 |                            |
-| `sshuttle`                   |                            |
-| `netdiscover`                |                            |
-| `dig`                        | dns info                   |
-| `xargs`                      | start mutliple processes   |
-| `find`                       |                            |
-| `tar -czvf`                  | create tar.gz file         |
-| `rsync`                      | create backup              |
-| `df`                         | files system info          |
-| `du`                         | disk usage info            |
-| `split`                      | split large files          |
-| `w`                          | logged in users            |
-| `netstat`, `netstat -tupan`  | network information        |
-| `usermod -aG sudo $username` | add user to sudo group     |
-| `last`                       | show last user activity    |
-| `neofetch`                   | display system information |
-| `ncdu --si`                  | show disk usage            |
-| `journalctl --vacuum-size=500M` | clean up journal        |
+| Command                                          | What does it do?           |
+| -------------------------------------------------| -------------------------- |
+| `groups`                                         |                            |
+| `chmod`                                          |                            |
+| `chown`                                          | change owner               |
+| `traceroute`                                     |                            |
+| `sshuttle`                                       |                            |
+| `netdiscover`                                    |                            |
+| `dig`                                            | dns info                   |
+| `xargs`                                          | start mutliple processes   |
+| `find`                                           | find file                  |
+| `tar -czvf`                                      | create tar.gz file         |
+| `tar -xzvf`                                      | extract tar.gz file        |
+| `rsync`                                          | create backup              |
+| `df`                                             | files system info          |
+| `du`                                             | disk usage info            |
+| `split`                                          | split large files          |
+| `w`                                              | logged in users            |
+| `netstat`, `netstat -tupan`                      | network information        |
+| `usermod -aG sudo $username`                     | add user to sudo group     |
+| `last`                                           | show last user activity    |
+| `neofetch`                                       | display system information |
+| `ncdu --si`                                      | show disk usage            |
+| `journalctl --vacuum-size=500M`                  | clean up journal           |
+| `ranger`                                         | file explorer              |
+
 
 ## Vim
 
 ### Commands
 
-| Command      | What does it do?    |
-| ------------ | ------------------- |
-| :Ex          | File Explorer       |
-| :Vex         | Split File Explorer |
-| :s/old/new/g | Replace in lines    |
-| dt<character> | delete up to <character> |
-| cw | delete word and go into insert mode |
-| C-u | go up half a page |
-| C-d | go down half a page |
-| % | jump to closing bracket |
-| :find | search for file |
+| Command                                          | What does it do?    |
+| ------------                                     | ------------------- |
+| :Ex                                              | File Explorer       |
+| :Vex                                             | Split File Explorer |
+| :s/old/new/g                                     | Replace in lines    |
+| dt<character>                                    | delete up to <character> |
+| cw                                               | delete word and go into insert mode |
+| C-u                                              | go up half a page |
+| C-d                                              | go down half a page |
+| %                                                | jump to closing bracket |
+| :find                                            | search for file |
 
 
 
