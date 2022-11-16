@@ -107,6 +107,10 @@ sudo vi /etc/ssh/sshd_config
 PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
+    
+## Where to store user scripts
+    
+User scripts should generally go into `/usr/local/bin`.
 
 ## get referer with awk
 
