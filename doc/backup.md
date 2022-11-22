@@ -5,6 +5,31 @@
 * Encryption Key on QR code
 * raspberry pi as file server
 
+## Permanently mount USB drive
+
+```bash
+# find drive to mount
+df -h
+# or
+fdisk -l
+
+# get uuid of disk partition
+sudo blkid
+
+# edit fstab file
+# sudo vi /etc/fstab
+
+# add this line:
+UUID=D632-BE5F /mnt/pidrive exfat defaults,auto,users,rw,nofail 0 0
+
+# now test it out
+sudo mount -a
+
+
+
+
+```
+
 ## LUKS 
 
 Encrypt a usb drive on linux.
@@ -52,7 +77,6 @@ sudo cryptsetup luksClose USBDrive
 ## WSL
 
 If there is a input/output error, try running `wsl.exe --shutdown`.
-
 
 
 
