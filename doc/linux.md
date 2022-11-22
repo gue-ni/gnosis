@@ -216,6 +216,8 @@ du -sh .
     
 ```bash
 wget --mirror \
+    --user= \
+    --password='' \
     --convert-links \
     --adjust-extension \
     --page-requisites \
