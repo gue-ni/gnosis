@@ -215,5 +215,11 @@ du -sh .
 ## Mirror a website 
     
 ```bash
-wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://site-to-download.com
+wget --mirror \
+    --convert-links \
+    --adjust-extension \
+    --page-requisites \
+    --no-parent \
+    --random-wait --wait 3 --no-http-keep-alive \ # try not to get banned
+    https://site-to-download.com
  ```
