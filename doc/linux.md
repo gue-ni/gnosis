@@ -211,3 +211,9 @@ command > file 2>&1
 du -sh .
 > 17G
 ```
+
+## Mirror a website 
+    
+```bash
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://site-to-download.com
+ ```
