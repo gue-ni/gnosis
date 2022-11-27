@@ -2,11 +2,13 @@
 eleventyExcludeFromCollections: true
 ---
 
-<h1>Docs</h1>
+<h1 class="text-3xl font-bold tracking-tight">Docs</h1>
 <ul>
   {%- for article in collections.doc -%}
     <li class="my-4">
-      <a href="{{ article.url }}">{{ article.url }}</a>
+      <a class="underline text-sky-500 visited:text-purple-500" href="{{ article.url }}">
+        {{ article.fileSlug }}
+      </a>
     </li>
   {%- endfor -%}
 </ul>
