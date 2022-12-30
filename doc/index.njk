@@ -6,7 +6,7 @@ eleventyExcludeFromCollections: true
 <ul>
   {%- for article in collections.doc -%}
     <li class="my-4">
-      <a class="underline text-sky-500 visited:text-purple-500" href="{{ article.url }}">
+      <a class="underline text-sky-500 visited:text-purple-500" href="./{{ article.url }}">
         {{ article.fileSlug }}
       </a>
     </li>
