@@ -10,27 +10,32 @@
 
 ## Bash
 
-| Command                      | What does it do?           |
-| ---------------------------- | -------------------------- |
-| `groups`                     |                            |
-| `chmod`                      |                            |
-| `chown`                      | change owner               |
-| `traceroute`                 |                            |
-| `sshuttle`                   |                            |
-| `netdiscover`                |                            |
-| `dig`                        | dns info                   |
-| `xargs`                      | start mutliple processes   |
-| `find`                       |                            |
-| `tar -czvf`                  | create tar.gz file         |
-| `rsync`                      | create backup              |
-| `df`                         | files system info          |
-| `du`                         | disk usage info            |
-| `split`                      | split large files          |
-| `w`                          | logged in users            |
-| `netstat`, `netstat -tupan`  | network information        |
-| `usermod -aG sudo $username` | add user to sudo group     |
-| `last`                       | show last user activity    |
-| `neofetch`                   | display system information |
+| Command                                          | What does it do?           |
+| -------------------------------------------------| -------------------------- |
+| `groups`                                         |                            |
+| `chmod`                                          |                            |
+| `chown`                                          | change owner               |
+| `traceroute`                                     |                            |
+| `sshuttle`                                       |                            |
+| `netdiscover`                                    |                            |
+| `dig`                                            | dns info                   |
+| `xargs`                                          | start mutliple processes   |
+| `find`                                           | find file                  |
+| `tar -czvf`                                      | create tar.gz file         |
+| `tar -xzvf`                                      | extract tar.gz file        |
+| `rsync`                                          | create backup              |
+| `df`                                             | files system info          |
+| `du`                                             | disk usage info            |
+| `split`                                          | split large files          |
+| `w`                                              | logged in users            |
+| `netstat`, `netstat -tupan`                      | network information        |
+| `usermod -aG sudo $username`                     | add user to sudo group     |
+| `last`                                           | show last user activity    |
+| `neofetch`                                       | display system information |
+| `ncdu --si`                                      | show disk usage            |
+| `journalctl --vacuum-size=500M`                  | clean up journal           |
+| `ranger`                                         | file explorer              |
+
 
 ## Vim
 
@@ -98,6 +103,10 @@ sudo vi /etc/ssh/sshd_config
 PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
+    
+## Where to store user scripts
+    
+User scripts should generally go into `/usr/local/bin`.
 
 ## get referer with awk
 
@@ -199,8 +208,24 @@ du -sh .
 > 17G
 ```
 
+<<<<<<< HEAD
 ## Gdb
 
 | Command | Effect |
 | ------- | ------ |
 | layout 
+=======
+## Mirror a website 
+    
+```bash
+wget --mirror \
+    --user= \
+    --password='' \
+    --convert-links \
+    --adjust-extension \
+    --page-requisites \
+    --no-parent \
+    --random-wait --wait 3 --no-http-keep-alive \ # try not to get banned
+    https://site-to-download.com
+ ```
+>>>>>>> 24a359c89d21f5d48c7bbba2c37e2f5afeb8d009

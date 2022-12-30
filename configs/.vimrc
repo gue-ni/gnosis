@@ -7,11 +7,14 @@ colorscheme slate
 " syntax highlighting
 syntax on
 
+set nofoldenable
+set foldmethod=syntax
+
 " tabs & spaces
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
+" set tabstop=4
+" set shiftwidth=4
+" set softtabstop=4
+" set expandtab
 
 " indent correctly 
 set smartindent
@@ -40,11 +43,11 @@ set backspace=indent,eol,start
 
 " insert closing brackets/quotes
 inoremap { {}<Esc>ha
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
-inoremap ` ``<Esc>ha
+" inoremap ( ()<Esc>ha
+" inoremap [ []<Esc>ha
+" inoremap " ""<Esc>ha
+" inoremap ' ''<Esc>ha
+" inoremap ` ``<Esc>ha
 
 " fuzzy file search
 set path+=**
