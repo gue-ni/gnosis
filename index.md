@@ -1,5 +1,5 @@
 ---
-layout: layouts/markdown.njk
+layout: layouts/base.njk
 ---
 
 # Stuff
