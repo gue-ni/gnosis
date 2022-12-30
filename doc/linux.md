@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-- [Bash](#bash)
-- [Vim](#vim)
-- [SSH](#ssh)
-- [Tmux](#tmux)
-- [Nginx](#nginx)
+-   [Bash](#bash)
+-   [Vim](#vim)
+-   [SSH](#ssh)
+-   [Tmux](#tmux)
+-   [Nginx](#nginx)
 
 ## Bash
 
@@ -36,45 +36,41 @@
 
 ### Commands
 
-| Command      | What does it do?    |
-| ------------ | ------------------- |
-| :Ex          | File Explorer       |
-| :Vex         | Split File Explorer |
-| :s/old/new/g | Replace in lines    |
-| dt<character> | delete up to <character> |
-| cw | delete word and go into insert mode |
-| C-u | go up half a page |
-| C-d | go down half a page |
-| % | jump to closing bracket |
-| :find | search for file |
-
-
+| Command       | What does it do?                    |
+| ------------- | ----------------------------------- |
+| :Ex           | File Explorer                       |
+| :Vex          | Split File Explorer                 |
+| :s/old/new/g  | Replace in lines                    |
+| dt<character> | delete up to <character>            |
+| cw            | delete word and go into insert mode |
+| C-u           | go up half a page                   |
+| C-d           | go down half a page                 |
+| %             | jump to closing bracket             |
+| :find         | search for file                     |
 
 ### Implement VSCode's Ctrl+P in Vim
 
-
-
 ### plugins
 
-- supertab
-- AutoComplPop
+-   supertab
+-   AutoComplPop
 
 ## Tmux
 
-| Command                                       | What does it do?   |
-| ----------------------------------------------| ------------------ |
-| `C-b`                                         | prefix key         |
-| `C-b %`                                       | split vertically   |
-| `C-b "`                                       | split horizontally |
-| `C-b arrow`                                   | move between panes |
-| `C-b c`                                       | Create new window  |
-| `C-b n`                                       | next window        |
-| `C-b p`                                       | previous window    |
-| `C-b $`                                       | rename session     |
-| `C-b w`                                       | widnow mode        |
-| `C-b d`                                       | detach session     |
-| `tmux ls`                                     | list sessions      |
-| `tmux attach-session -t <session>`            | attach session     |
+| Command                            | What does it do?   |
+| ---------------------------------- | ------------------ |
+| `C-b`                              | prefix key         |
+| `C-b %`                            | split vertically   |
+| `C-b "`                            | split horizontally |
+| `C-b arrow`                        | move between panes |
+| `C-b c`                            | Create new window  |
+| `C-b n`                            | next window        |
+| `C-b p`                            | previous window    |
+| `C-b $`                            | rename session     |
+| `C-b w`                            | widnow mode        |
+| `C-b d`                            | detach session     |
+| `tmux ls`                          | list sessions      |
+| `tmux attach-session -t <session>` | attach session     |
 
 ## SSH
 
@@ -202,3 +198,9 @@ command > file 2>&1
 du -sh .
 > 17G
 ```
+
+## Gdb
+
+| Command | Effect |
+| ------- | ------ |
+| layout 
