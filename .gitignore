@@ -1,5 +1,7 @@
 .env
 .vscode/
+_site/
+node_modules/
 tmp/
 include.txt
 exclude.txt

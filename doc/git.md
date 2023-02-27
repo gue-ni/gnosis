@@ -2,6 +2,12 @@
 
 ## Common Tasks
 
+### Set Default Editor To `vi`
+
+```bash
+git config --global core.editor "vi"
+```
+
 ### Reset to last commit
 
 `git reset --hard HEAD`
