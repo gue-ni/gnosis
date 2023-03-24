@@ -1,27 +1,24 @@
-# 2022-09-03
+CC      = gcc
+CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds
+LFLAGS  = -lm
 
-CC 				= g++
-CPPFLAGS 	= -Wall -Werror --std=c++17 -Iinclude 
+SRC = $(wildcard *.c)
+OBJ = $(patsubst %.c, obj/%.o, $(SRC))
 
-SRC 			= $(wildcard src/*.cpp)
-HEADERS 	= $(wildcard include/*.h)
-OBJ 			= $(patsubst src/%.cpp, build/%.o, $(SRC))
+.PHONY: all clean run
 
-CPPFLAGS 	+= -pthread
+BIN = app
 
-APP = sandbox
-
-.PHONY: all clean
-
-all: $(APP) 
-
-$(APP): $(OBJ)
-	$(CC) $(CPPFLAGS) -o $@ $^
-
-build/%.o: src/%.cpp $(HEADERS)
-	$(CC) $(CPPFLAGS) -c -o $@ $<
+all: $(BIN)
 
 clean:
-	rm -f $(APP) build/*.o 
+        rm -rf $(OBJ) $(BIN)
 
+run: $(BIN)
+        ./$(BIN)
 
+$(BIN): $(OBJ)
+        $(CC) $(LFLAGS) -o $@ $^
+
+obj/%.o: %.c
+        $(CC) $(CFLAGS) -c -o $@ $<
