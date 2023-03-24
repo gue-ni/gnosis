@@ -18,7 +18,7 @@ run: $(BIN)
         ./$(BIN)
 
 $(BIN): $(OBJ)
-        $(CC) $(LFLAGS) -o $@ $^
+        $(CC) -o $@ $^ $(LFLAGS)
 
 obj/%.o: %.c
         $(CC) $(CFLAGS) -c -o $@ $<
