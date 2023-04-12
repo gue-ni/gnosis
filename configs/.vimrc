@@ -1,20 +1,17 @@
 " relative line number
-set relativenumber
+" set relativenumber
+set number relativenumber
 
-" colorscheme
-colorscheme slate
-
-" syntax highlighting
-syntax on
+set mouse=a
 
 set nofoldenable
 set foldmethod=syntax
 
 " tabs & spaces
-" set tabstop=4
-" set shiftwidth=4
-" set softtabstop=4
-" set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " indent correctly 
 set smartindent
@@ -29,7 +26,7 @@ set showmode
 set showmatch
 
 " underline current line
-" set cursorline
+set cursorline
 
 " search
 set hlsearch
@@ -43,7 +40,7 @@ set backspace=indent,eol,start
 
 " insert closing brackets/quotes
 inoremap { {}<Esc>ha
-" inoremap ( ()<Esc>ha
+inoremap ( ()<Esc>ha
 " inoremap [ []<Esc>ha
 " inoremap " ""<Esc>ha
 " inoremap ' ''<Esc>ha
@@ -52,6 +49,15 @@ inoremap { {}<Esc>ha
 " fuzzy file search
 set path+=**
 set wildmenu
+
+" colorscheme
+"colorscheme slate
+
+syntax on
+set background=light
+set t_Co=256
+let g:solarized_termcolors=256
+colorscheme solarized
 
 
 
