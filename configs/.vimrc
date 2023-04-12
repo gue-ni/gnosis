@@ -53,6 +53,7 @@ set wildmenu
 " colorscheme
 "colorscheme slate
 
+" to install a theme, put the *.vim file in ~/.vim/colors
 syntax on
 set background=light
 set t_Co=256
