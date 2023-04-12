@@ -44,6 +44,7 @@
 | Command       | What does it do?                    |
 | ------------- | ----------------------------------- |
 | :Ex or :E     | File Explorer                       |
+| :Ex or :E     | File Explorer                       |
 | :Vex          | Split File Explorer                 |
 | :s/old/new/g  | Replace in lines                    |
 | dt<character> | delete up to <character>            |
@@ -54,6 +55,10 @@
 | :find         | search for file                     |
 | :grep         | grep files                          |
 | gd            | search for symbol under cursor      |
+| :Tex          | Tab file explorer                   |
+| gt            | go to next tab                      |
+| :split        | split into windows                  |
+| C-w w         | navigate to next split window       |
 
 
 ### Implement VSCode's Ctrl+P in Vim
@@ -211,13 +216,6 @@ du -sh .
 > 17G
 ```
 
-<<<<<<< HEAD
-## Gdb
-
-| Command | Effect |
-| ------- | ------ |
-| layout 
-=======
 ## Mirror a website 
     
 ```bash
@@ -230,5 +228,8 @@ wget --mirror \
     --no-parent \
     --random-wait --wait 3 --no-http-keep-alive \ # try not to get banned
     https://site-to-download.com
- ```
->>>>>>> 24a359c89d21f5d48c7bbba2c37e2f5afeb8d009
+	 ```
+
+
+
+
