@@ -43,7 +43,7 @@
 
 | Command       | What does it do?                    |
 | ------------- | ----------------------------------- |
-| :Ex           | File Explorer                       |
+| :Ex or :E     | File Explorer                       |
 | :Vex          | Split File Explorer                 |
 | :s/old/new/g  | Replace in lines                    |
 | dt<character> | delete up to <character>            |
@@ -52,6 +52,9 @@
 | C-d           | go down half a page                 |
 | %             | jump to closing bracket             |
 | :find         | search for file                     |
+| :grep         | grep files                          |
+| gd            | search for symbol under cursor      |
+
 
 ### Implement VSCode's Ctrl+P in Vim
 

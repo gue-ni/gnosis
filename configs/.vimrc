@@ -1,5 +1,4 @@
-" relative line number
-" set relativenumber
+" relative line number and absolute number at cursor
 set number relativenumber
 
 set mouse=a
