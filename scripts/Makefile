@@ -4,7 +4,7 @@ LFLAGS  = -lm
 
 OBJDIR = obj
 BINDIR = bin
-SRC = $(wildcard *.c)
+SRC = $(wildcard *.c) $(wildcard **/*.c)
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 .PHONY: all clean run
@@ -19,10 +19,11 @@ clean:
 run: $(TARGET)
         ./$(TARGET)
 
-$(BIN): $(OBJ)
+$(TARGET): $(OBJ)
         $(CC) -o $@ $^ $(LFLAGS)
 
-$(OBJDIR)/%.o: %.c | $(OBJDIR) 
+$(OBJDIR)/%.o: %.c | $(OBJDIR)
+        mkdir -p  $(dir $@)
         $(CC) $(CFLAGS) -c -o $@ $<
 
 $(OBJDIR):
