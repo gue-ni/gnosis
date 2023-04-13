@@ -13,7 +13,7 @@ BIN = app
 all: $(BIN)
 
 clean:
-        rm -rf $(OBJ) $(BIN)
+        rm -rf $(OBJDIR) $(BIN)
 
 run: $(BIN)
         ./$(BIN)
