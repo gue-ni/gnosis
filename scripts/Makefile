@@ -3,20 +3,21 @@ CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds
 LFLAGS  = -lm
 
 OBJDIR = obj
+BINDIR = bin
 SRC = $(wildcard *.c)
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 .PHONY: all clean run
 
-BIN = app
+TARGET = app
 
-all: $(BIN)
+all: $(TARGET)
 
 clean:
-        rm -rf $(OBJDIR) $(BIN)
+        rm -rf $(OBJDIR) $(TARGET)
 
-run: $(BIN)
-        ./$(BIN)
+run: $(TARGET)
+        ./$(TARGET)
 
 $(BIN): $(OBJ)
         $(CC) -o $@ $^ $(LFLAGS)
