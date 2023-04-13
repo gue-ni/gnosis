@@ -2,8 +2,9 @@ CC      = gcc
 CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds
 LFLAGS  = -lm
 
+OBJDIR = obj
 SRC = $(wildcard *.c)
-OBJ = $(patsubst %.c, obj/%.o, $(SRC))
+OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 .PHONY: all clean run
 
@@ -20,5 +21,8 @@ run: $(BIN)
 $(BIN): $(OBJ)
         $(CC) -o $@ $^ $(LFLAGS)
 
-obj/%.o: %.c
+$(OBJDIR)/%.o: %.c | $(OBJDIR) 
         $(CC) $(CFLAGS) -c -o $@ $<
+
+$(OBJDIR):
+        mkdir -p $(OBJDIR)
