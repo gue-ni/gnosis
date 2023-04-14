@@ -10,6 +10,8 @@
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
+" indent with spaces instead of tabgs
+:set expandtab
 
 " allow mouse usage
 :set mouse=a
@@ -17,7 +19,7 @@
 " set colorscheme
 " colorschemes are insalled to colors
 :syntax on
-:set background=light
+:set background=dark
 :set t_Co=256
 :let g:solarized_termcolors=256
 :colorscheme solarized
@@ -36,4 +38,8 @@
 
 :inoremap ( ()<Esc>ha
 :inoremap { {}<Esc>ha
+
+" show whitespace
+set list
+set lcs+=space:·
 

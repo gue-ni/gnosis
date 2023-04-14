@@ -14,17 +14,15 @@ TARGET = app
 all: $(TARGET)
 
 clean:
-        rm -rf $(OBJDIR) $(TARGET)
+	rm -rf $(OBJDIR) $(TARGET)
 
 run: $(TARGET)
-        ./$(TARGET)
+	./$(TARGET)
 
 $(TARGET): $(OBJ)
-        $(CC) -o $@ $^ $(LFLAGS)
+	$(CC) -o $@ $^ $(LFLAGS)
 
-$(OBJDIR)/%.o: %.c | $(OBJDIR)
-        mkdir -p  $(dir $@)
-        $(CC) $(CFLAGS) -c -o $@ $<
+$(OBJDIR)/%.o: %.c
+	@mkdir -p  $(dir $@)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(OBJDIR):
-        mkdir -p $(OBJDIR)
