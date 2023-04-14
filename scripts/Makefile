@@ -4,7 +4,7 @@ LFLAGS  = -lm
 
 OBJDIR = obj
 BINDIR = bin
-SRC = $(wildcard *.c) $(wildcard **/*.c)
+SRC = $(shell find . -name '*.c')
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 .PHONY: all clean run
