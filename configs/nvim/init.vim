@@ -6,11 +6,11 @@
 
 " indentation
 :set autoindent
-:set tabstop=4
-:set shiftwidth=4
-:set smarttab
-:set softtabstop=4
-" indent with spaces instead of tabgs
+:set tabstop        =4
+:set shiftwidth     =4
+:set softtabstop    =4
+" indent with spaces instead of tabs
+" disable with :set noexpandtab
 :set expandtab
 
 " allow mouse usage

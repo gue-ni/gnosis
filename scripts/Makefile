@@ -1,25 +1,29 @@
+# a very versatile Makefile that supports nested src directories
 CC      = gcc
-CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds
+CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds -O2
 LFLAGS  = -lm
 
 OBJDIR = obj
 BINDIR = bin
-SRC = $(shell find . -name '*.c')
+SRCDIR = src
+
+SRC = $(shell find $(SRCDIR) -name '*.c')
 OBJ = $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
 .PHONY: all clean run
 
 TARGET = app
 
-all: $(TARGET)
+all: $(BINDIR)/$(TARGET)
 
 clean:
-	rm -rf $(OBJDIR) $(TARGET)
+	rm -rf $(OBJDIR) $(BINDIR)
 
-run: $(TARGET)
-	./$(TARGET)
+run: $(BINDIR)/$(TARGET)
+	./$(BINDIR)/$(TARGET)
 
-$(TARGET): $(OBJ)
+$(BINDIR)/$(TARGET): $(OBJ)
+	@mkdir -p $(dir $@)
 	$(CC) -o $@ $^ $(LFLAGS)
 
 $(OBJDIR)/%.o: %.c
