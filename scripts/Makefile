@@ -10,13 +10,7 @@ SRCDIR 	= src
 SRC 	= $(shell find $(SRCDIR) -name '*.c')
 OBJ 	= $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
-# we can also make a library:
-LIBDIR 	= lib
-CFLAGS	+=-I$(LIBDIR)
-LIB		= $(shell find $(LIBDIR) -name '*.c')
-LIBOBJ 	= $(patsubst %.c, $(OBJDIR)/%.o, $(LIB))
-
-.PHONY: all clean run valgrind gprof
+.PHONY: all clean run valgrind gprof format
 
 TARGET = app
 
@@ -37,13 +31,16 @@ gprof: CFLAGS += -pg
 gprof: LFLAGS += -pg
 gprof: clean run
 	gprof $(BINDIR)/$(TARGET) gmon.out > gprof_report.txt
-	rm -f gmon.out
 
-$(BINDIR)/$(TARGET): $(OBJ) $(LIBOBJ)
+format: .clang-format
+	clang-format -i --style=Google $(SRCDIR)/*.[ch]
+
+$(BINDIR)/$(TARGET): $(OBJ)
 	@mkdir -p $(dir $@)
 	$(CC) -o $@ $^ $(LFLAGS)
 
 $(OBJDIR)/%.o: %.c
 	@mkdir -p  $(dir $@)
 	$(CC) $(CFLAGS) -c -o $@ $<
+
 
