@@ -55,3 +55,9 @@ File sections are useful for better readability.
 ```
 
 ### Debugging
+
+
+### Weird java issue
+
+vscode extension 'Language Support for Java(TM) by RedHat' compiles java files to .class files in the background
+which causes the error 'class file has wrong version 62.0, should be 52.0'
