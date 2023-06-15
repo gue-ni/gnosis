@@ -1,24 +1,46 @@
+# a very versatile Makefile that supports nested src directories
 CC      = gcc
-CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds
+CFLAGS  = --std=iso9899:1999 -Wall -Wextra -pedantic -fsanitize=bounds -O3 -g
 LFLAGS  = -lm
 
-SRC = $(wildcard *.c)
-OBJ = $(patsubst %.c, obj/%.o, $(SRC))
+OBJDIR 	= obj
+BINDIR 	= bin
+SRCDIR 	= src
 
-.PHONY: all clean run
+SRC 	= $(shell find $(SRCDIR) -name '*.c')
+OBJ 	= $(patsubst %.c, $(OBJDIR)/%.o, $(SRC))
 
-BIN = app
+.PHONY: all clean run valgrind gprof format
 
-all: $(BIN)
+TARGET = app
+
+all: $(BINDIR)/$(TARGET)
 
 clean:
-        rm -rf $(OBJ) $(BIN)
+	rm -rf $(OBJDIR) $(BINDIR)
 
-run: $(BIN)
-        ./$(BIN)
+run: $(BINDIR)/$(TARGET)
+	./$(BINDIR)/$(TARGET)
 
-$(BIN): $(OBJ)
-        $(CC) -o $@ $^ $(LFLAGS)
+# check for memory leaks
+valgrind: all
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind_report.txt $(BINDIR)/$(TARGET)
 
-obj/%.o: %.c
-        $(CC) $(CFLAGS) -c -o $@ $<
+# performance benchmark
+gprof: CFLAGS += -pg
+gprof: LFLAGS += -pg
+gprof: clean run
+	gprof $(BINDIR)/$(TARGET) gmon.out > gprof_report.txt
+
+format: .clang-format
+	clang-format -i --style=Google $(SRCDIR)/*.[ch]
+
+$(BINDIR)/$(TARGET): $(OBJ)
+	@mkdir -p $(dir $@)
+	$(CC) -o $@ $^ $(LFLAGS)
+
+$(OBJDIR)/%.o: %.c
+	@mkdir -p  $(dir $@)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+
