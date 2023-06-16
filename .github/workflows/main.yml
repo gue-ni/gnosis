@@ -27,7 +27,7 @@ jobs:
         port: ${{ secrets.PORT }}
         rm: true
         source: "_site/*"
-        target: "/var/www/jakobmaier.at/stuff"
+        target: "/var/www/stuff"
         strip_components: 1
         
        
