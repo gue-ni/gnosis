@@ -2,40 +2,39 @@
 
 ## Table of Contents
 
--   [Bash](#bash)
--   [Vim](#vim)
--   [SSH](#ssh)
--   [Tmux](#tmux)
--   [Nginx](#nginx)
+- [Bash](#bash)
+- [Vim](#vim)
+- [SSH](#ssh)
+- [Tmux](#tmux)
+- [Nginx](#nginx)
 
 ## Bash
 
-| Command                                          | What does it do?           |
-| -------------------------------------------------| -------------------------- |
-| `groups`                                         |                            |
-| `chmod`                                          |                            |
-| `chown`                                          | change owner               |
-| `traceroute`                                     |                            |
-| `sshuttle`                                       |                            |
-| `netdiscover`                                    |                            |
-| `dig`                                            | dns info                   |
-| `xargs`                                          | start mutliple processes   |
-| `find`                                           | find file                  |
-| `tar -czvf`                                      | create tar.gz file         |
-| `tar -xzvf`                                      | extract tar.gz file        |
-| `rsync`                                          | create backup              |
-| `df`                                             | files system info          |
-| `du`                                             | disk usage info            |
-| `split`                                          | split large files          |
-| `w`                                              | logged in users            |
-| `netstat`, `netstat -tupan`                      | network information        |
-| `usermod -aG sudo $username`                     | add user to sudo group     |
-| `last`                                           | show last user activity    |
-| `neofetch`                                       | display system information |
-| `ncdu --si`                                      | show disk usage            |
-| `journalctl --vacuum-size=500M`                  | clean up journal           |
-| `ranger`                                         | file explorer              |
-
+| Command                         | What does it do?           |
+| ------------------------------- | -------------------------- |
+| `groups`                        |                            |
+| `chmod`                         |                            |
+| `chown`                         | change owner               |
+| `traceroute`                    |                            |
+| `sshuttle`                      |                            |
+| `netdiscover`                   |                            |
+| `dig`                           | dns info                   |
+| `xargs`                         | start mutliple processes   |
+| `find`                          | find file                  |
+| `tar -czvf`                     | create tar.gz file         |
+| `tar -xzvf`                     | extract tar.gz file        |
+| `rsync`                         | create backup              |
+| `df`                            | files system info          |
+| `du`                            | disk usage info            |
+| `split`                         | split large files          |
+| `w`                             | logged in users            |
+| `netstat`, `netstat -tupan`     | network information        |
+| `usermod -aG sudo $username`    | add user to sudo group     |
+| `last`                          | show last user activity    |
+| `neofetch`                      | display system information |
+| `ncdu --si`                     | show disk usage            |
+| `journalctl --vacuum-size=500M` | clean up journal           |
+| `ranger`                        | file explorer              |
 
 ## Vim
 
@@ -59,14 +58,15 @@
 | gt            | go to next tab                      |
 | :split        | split into windows                  |
 | C-w w         | navigate to next split window       |
-
+| J             | join lines, removing newline        |
+| gq            | format long lines                   |
 
 ### Implement VSCode's Ctrl+P in Vim
 
 ### plugins
 
--   supertab
--   AutoComplPop
+- supertab
+- AutoComplPop
 
 ## Tmux
 
@@ -111,9 +111,9 @@ sudo vi /etc/ssh/sshd_config
 PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
-    
+
 ## Where to store user scripts
-    
+
 User scripts should generally go into `/usr/local/bin`.
 
 ## get referer with awk
@@ -216,9 +216,9 @@ du -sh .
 > 17G
 ```
 
-## Mirror a website 
-    
-```bash
+## Mirror a website
+
+````bash
 wget --mirror \
     --user= \
     --password='' \
@@ -233,3 +233,4 @@ wget --mirror \
 
 
 
+````
