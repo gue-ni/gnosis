@@ -14,17 +14,17 @@
 
 ## docker-compose
 
-| Command                                 | What does it do?               |
-| --------------------------------------- | ------------------------------ |
-| `docker-compose build`                  | build container image          |
-| `docker-compose build --progress plain` | build with plain output        |
-| `docker-compose up -d`                  | run container in background    |
-| `docker-compose down`                   | shut down container            |
-| `docker-compose ps`                     | list running docker containers |
-| `docker-compose logs -f`                | show logs                      |
-| `docker-compose exec <container> sh`    | open shell in container        |
-|`docker-compose down --rmi all --volumes`| stop and remove containers, networks, images and volumes |
-| `docker-compose ps` ||
+| Command                                   | What does it do?                                         |
+| ----------------------------------------- | -------------------------------------------------------- |
+| `docker-compose build`                    | build container image                                    |
+| `docker-compose build --progress plain`   | build with plain output                                  |
+| `docker-compose up -d`                    | run container in background                              |
+| `docker-compose down`                     | shut down container                                      |
+| `docker-compose ps`                       | list running docker containers                           |
+| `docker-compose logs -f`                  | show logs                                                |
+| `docker-compose exec <container> sh`      | open shell in container                                  |
+| `docker-compose down --rmi all --volumes` | stop and remove containers, networks, images and volumes |
+| `docker-compose ps`                       |                                                          |
 
 https://docs.docker.com/compose/reference/up/
 
@@ -41,18 +41,18 @@ sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log
 Be carefull, docker overrides ufw (uncomplicated firewall). To disable this behaviour, you need to put
 `{ "iptables": false }` in `/etc/docker/daemon.json`.
 
-Always use 
+Always use
 
 ```yml
 port:
-    - "127.0.0.1:8080:8080"
+  - "127.0.0.1:8080:8080"
 ```
 
-instead of 
+instead of
 
 ```yml
 port:
-    - "8080:8080"
+  - "8080:8080"
 ```
 
 This ensures the ports are only accessible from localhost and not from the outside.
@@ -63,7 +63,6 @@ This ensures the ports are only accessible from localhost and not from the outsi
 
 https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 
-
 ## Examples
 
 ### Postgres
@@ -71,16 +70,16 @@ https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 `docker-compose.yml`:
 
 ```yml
-version: '3.8'
+version: "3.8"
 services:
   db:
-    image: postgres:14.1-alpine   
+    image: postgres:14.1-alpine
     restart: always
     environment:
-      - POSTGRES_USER=postgres    
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
     ports:
-      - '5432:5432'
+      - "5432:5432"
     volumes:
       - ./db:/var/lib/postgresql/data
       - ./:/root
@@ -89,14 +88,12 @@ volumes:
     driver: local
 ```
 
-
 ### Mysql
 
 ```yml
-version: '3.1'
+version: "3.1"
 
 services:
-
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
@@ -110,5 +107,3 @@ services:
     ports:
       - 8080:8080
 ```
-
-

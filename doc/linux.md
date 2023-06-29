@@ -150,7 +150,7 @@ find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
 As root:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_nginx_server_block_for_domain.sh)
+bash <(curl -s https://raw.githubusercontent.com/gue-ni/stuff/main/scripts/setup_nginx_server_block_for_domain.sh)
 ```
 
 The [script](scripts/setup_nginx_server_block_for_domain.sh).
@@ -160,7 +160,7 @@ The [script](scripts/setup_nginx_server_block_for_domain.sh).
 On server, as root:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/gue-ni/DevOps/main/scripts/setup_git_deploy_with_post_receive.sh)
+bash <(curl -s https://raw.githubusercontent.com/gue-ni/stuff/main/scripts/setup_git_deploy_with_post_receive.sh)
 ```
 
 The [script](scripts/setup_git_deploy_with_post_receive.sh).
