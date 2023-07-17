@@ -10,3 +10,5 @@ Useful commands, scripts, config files etc.
 
 ### [> Books](books/)
 
+### [> Scripts](scripts/)
+
