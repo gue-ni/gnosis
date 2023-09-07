@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
--   [Java](#java)
--   [C/C++](#C%2FC%2B%2B)
+- [Java](#java)
+- [C/C++](#C%2FC%2B%2B)
 
 ## Java
 
@@ -31,10 +31,6 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 | `Ctrl + Q, Ctrl + T` | Search for files, types and members |
 | ``                   |                                     |
 
-'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
-'RuntimeLibrary': value 'MDd_DynamicDebug' doesn't match value 'MD_DynamicRelease'
-
-
 ### File Sections
 
 File sections are useful for better readability.
@@ -54,8 +50,25 @@ File sections are useful for better readability.
 /*==================[end of file]===========================================*/
 ```
 
-### Debugging
+### Compiler options
 
+```bash
+gcc --std=iso9899:1990 -pedantic -Wall -Wextra -O2 -march=native
+```
+
+### Sanitizing
+
+[Clang UndefinedBehaviourSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
+
+```bash
+clang -fsanitize=undefined,integer,implicit-conversion,null
+```
+
+[GCC](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
+
+```bash
+gcc -fsanitize=address,undefined,null
+```
 
 ### Weird java issue
 

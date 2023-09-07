@@ -35,6 +35,15 @@ git branch -a
 git checkout -b remote-branch-name origin/remote-branch-name
 ```
 
+### Git Rebase
+
+Get master branch updates on feature branch.
+
+```bash
+
+
+```
+
 ## Submodules
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
@@ -44,19 +53,17 @@ git checkout -b remote-branch-name origin/remote-branch-name
 git submodule add <repository url>
 
 # update local repo with remote changes
-git submodule update --remote 
+git submodule update --remote
 ```
 
-## Links
-
-[The Pro Git Book](https://git-scm.com/book/en/v2)
+## Useful Commands
 
 | Command                            | What does it do?                 |
 | ---------------------------------- | -------------------------------- |
 | `git remote set-url <name> <url>`  | change remote url                |
 | `git remote add <name> <url>`      | add remote                       |
 | `git commit . -m <comment>`        | new commit                       |
-| `git commit --amend`                | change last commit comment       |
+| `git commit --amend`               | change last commit comment       |
 | `git log --oneline`                | show commit history              |
 | `git revert <commit>`              | undo commit                      |
 | `git fetch --all`                  | get all remote files and commits |
@@ -73,10 +80,7 @@ git submodule update --remote
 | `git init`                         |                                  |
 | `git reset HEAD^`                  | undo last commit                 |
 
-## Submodules
-
-https://git-scm.com/book/en/v2/Git-Tools-Submodules
-
 ## Links
 
-[The Pro Git Book](https://git-scm.com/book/en/v2)
+- [The Pro Git Book](https://git-scm.com/book/en/v2)
+- [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)

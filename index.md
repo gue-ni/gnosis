@@ -6,9 +6,9 @@ layout: layouts/base.njk
 
 Useful commands, scripts, config files etc.
 
-### [> Useful Knowledge](doc/)
+## [> Useful Knowledge](doc/)
 
-### [> Books](books/)
+## [> Books](books/)
 
-### [> Scripts](scripts/)
+## [> Scripts](scripts/)
 
