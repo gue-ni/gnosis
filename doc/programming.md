@@ -4,6 +4,7 @@
 
 - [Java](#java)
 - [C/C++](#C%2FC%2B%2B)
+- [Rust](#rust)
 
 ## Java
 
@@ -70,7 +71,6 @@ clang -fsanitize=undefined,integer,implicit-conversion,null
 gcc -fsanitize=address,undefined,null
 ```
 
-### Weird java issue
+## Rust
 
-vscode extension 'Language Support for Java(TM) by RedHat' compiles java files to .class files in the background
-which causes the error 'class file has wrong version 62.0, should be 52.0'
+- https://docs.rust-embedded.org/book/interoperability/c-with-rust.html
