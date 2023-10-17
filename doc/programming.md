@@ -30,7 +30,12 @@ https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recomme
 | shortcut             | effect                              |
 | -------------------- | ----------------------------------- |
 | `Ctrl + Q, Ctrl + T` | Search for files, types and members |
-| ``                   |                                     |
+
+#### Visual Studio Code
+
+| shortcut           | effect       |
+| ------------------ | ------------ |
+| `Ctrl + Shift + O` | Go to Symbol |
 
 ### File Sections
 
@@ -71,6 +76,3 @@ clang -fsanitize=undefined,integer,implicit-conversion,null
 gcc -fsanitize=address,undefined,null
 ```
 
-## Rust
-
-- https://docs.rust-embedded.org/book/interoperability/c-with-rust.html
