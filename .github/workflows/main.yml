@@ -27,7 +27,7 @@ jobs:
         port: ${{ secrets.PORT }}
         rm: true
         source: "_site/*"
-        target: "/var/www/stuff"
+        target: "/var/www/gnosis"
         strip_components: 1
         
        
