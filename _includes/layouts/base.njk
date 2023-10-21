@@ -17,10 +17,15 @@
     }
     */
 
+    :root {
+      --font-color-default: #262626;
+      --border-color-default: #D0D7DE;
+    }
+
     body {
       max-width: 800px;
       margin: 0 auto;
-      color: #262626;
+      color: var(--font-color-default);
       padding: 1rem;
       font-weight: 400;
       font-family: 'Roboto Mono', monospace;
@@ -32,9 +37,21 @@
     }
 
     code[class|="language"] {
-      border: 1px solid #E5E7EB;
+      border: 1px solid var(--border-color-default);
       border-radius: .5rem;
       background-color: #F6F8FA;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    td,
+    th {
+      padding: .5rem;
+      border: 1px solid var(--border-color-default);
     }
   </style>
 
