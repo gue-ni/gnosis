@@ -2,9 +2,11 @@
 layout: layouts/base.njk
 ---
 
-# Stuff
+# Gnosis
 
-Useful commands, scripts, config files etc.
+*Gnosis* is a feminine Greek noun which means "knowledge" or "awareness".
+
+Useful commands, scripts, config files, etc can be found here.
 
 ## [> Useful Knowledge](doc/)
 
