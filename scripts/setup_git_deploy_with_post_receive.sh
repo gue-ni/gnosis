@@ -1,6 +1,6 @@
 #!/bin/bash
 
-github=https://raw.githubusercontent.com/gue-ni/DevOps/main
+github=https://raw.githubusercontent.com/gue-ni/gnosis/main
 
 read -p "Project name?" project
 if [ "$project" = "" ]; then

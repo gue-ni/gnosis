@@ -8,14 +8,13 @@ if [ "$domain" = "" ]; then
   exit 1
 fi
 
-github=https://raw.githubusercontent.com/gue-ni/DevOps/main
-https://raw.githubusercontent.com/gue-ni/DevOps/main/configs/example.com.conf
+github=https://raw.githubusercontent.com/gue-ni/gnosis/main
 
 # create directories
 mkdir -p /var/log/nginx/$domain/ /var/www/$domain/
 
 # create template website
-wget $github/configs/index.html -O /var/www/$domain/index.html
+wget $github/configs/index.html.example -O /var/www/$domain/index.html
 sed -i "s/example.com/$domain/g" /var/www/$domain/index.html
 
 # create nginx conf files
