@@ -25,7 +25,7 @@
 
 #### Visual Studio 2022
 
-https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recommendations&view=vs-2022
+[guide](https://docs.microsoft.com/en-us/visualstudio/ide/navigating-code?source=recommendations&view=vs-2022)
 
 | shortcut             | effect                              |
 | -------------------- | ----------------------------------- |
