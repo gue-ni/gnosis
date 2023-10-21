@@ -21,6 +21,7 @@
       max-width: 800px;
       margin: 0 auto;
       color: #262626;
+      padding: 1rem;
       font-weight: 400;
       font-family: 'Roboto Mono', monospace;
     }
@@ -43,7 +44,17 @@
 </head>
 
 <body>
-  {{ content | safe }}
+  <div>
+    {{ content | safe }}
+  </div>
+  <div style="text-align: center; padding: 1rem;">
+    <small>
+      <a class="" href="https://github.com/gue-ni/gnosis/edit/main/{{ page.inputPath }}" target="_blank"
+        rel="noopener noreferrer">
+        edit
+      </a>
+    </small>
+  </div>
 </body>
 
 </html>
