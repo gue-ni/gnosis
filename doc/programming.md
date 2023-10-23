@@ -22,9 +22,7 @@
 
 ## C / Cpp
 
-### Links
-
--  [cppquiz.org](https://cppquiz.org)
+- [cppquiz.org](https://cppquiz.org)
 
 ### Editors
 
@@ -83,7 +81,9 @@ gcc -fsanitize=address,undefined,null
 
 ## Rust
 
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
+
 ## Python
 
--  [pythontips.com](https://book.pythontips.com/)
-
+- [pythontips.com](https://book.pythontips.com/)
+- [realpython.com](https://realpython.com/)
