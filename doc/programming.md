@@ -2,27 +2,14 @@
 
 ## Table of Contents
 
-- [Java](#java)
-- [C/C++](#C%2FC%2B%2B)
-- [Rust](#rust)
-- [Python](#python)
+-   [Cpp](#cpp)
+-   [Python](#python)
+-   [Rust](#rust)
+-   [Java](#java)
 
-## Java
+## Cpp
 
-### Eclipse
-
-| shortcut           | effect         |
-| ------------------ | -------------- |
-| `ctrl + shift + t` | open type      |
-| `ctrl + o`         | outline        |
-| `ctrl + shift + g` | find usages    |
-| `ctrl + t`         | type hierarchy |
-| `ctr + shift + r`  | open resource  |
-| `ctr + shift + o`  | clean up file  |
-
-## C / Cpp
-
-- [cppquiz.org](https://cppquiz.org)
+-   [cppquiz.org](https://cppquiz.org)
 
 ### Editors
 
@@ -79,11 +66,24 @@ clang -fsanitize=undefined,integer,implicit-conversion,null
 gcc -fsanitize=address,undefined,null
 ```
 
-## Rust
-
-- [The Rust Programming Language](https://doc.rust-lang.org/book/)
-
 ## Python
 
-- [pythontips.com](https://book.pythontips.com/)
-- [realpython.com](https://realpython.com/)
+-   [pythontips.com](https://book.pythontips.com/)
+-   [realpython.com](https://realpython.com/)
+
+## Rust
+
+-   [The Rust Programming Language](https://doc.rust-lang.org/book/)
+
+## Java
+
+### Eclipse
+
+| shortcut           | effect         |
+| ------------------ | -------------- |
+| `ctrl + shift + t` | open type      |
+| `ctrl + o`         | outline        |
+| `ctrl + shift + g` | find usages    |
+| `ctrl + t`         | type hierarchy |
+| `ctr + shift + r`  | open resource  |
+| `ctr + shift + o`  | clean up file  |
