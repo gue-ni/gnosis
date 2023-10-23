@@ -11,12 +11,6 @@
     rel="stylesheet">
 
   <style>
-    /*
-    @font-face {
-      font-family: 'Roboto Mono';
-      src: url('/static/roboto_mono.ttf') format('truetype');
-    }
-    */
 
     :root {
       --font-color-default: #262626;
@@ -81,8 +75,8 @@
   <div>
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/doc/">Docs</a></li>
+        <li><a href="{{ global.root }}/">Home</a></li>
+        <li><a href="{{ global.root }}/doc/">Docs</a></li>
       </ul>
     </nav>
   </div>
@@ -91,7 +85,7 @@
   </div>
   <div style="text-align: center; padding: 1rem;">
     <small>
-      <a class="" href="https://github.com/gue-ni/gnosis/edit/main/{{ page.inputPath }}" target="_blank"
+      <a class="" href="{{ global.repo }}/edit/main/{{ page.inputPath }}" target="_blank"
         rel="noopener noreferrer">
         edit
       </a>
