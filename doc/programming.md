@@ -80,3 +80,5 @@ clang -fsanitize=undefined,integer,implicit-conversion,null
 gcc -fsanitize=address,undefined,null
 ```
 
+## Rust
+
