@@ -23,7 +23,7 @@
 
 ### Links
 
--  [cppquiz.org](https://cppquiz.org]
+-  [cppquiz.org](https://cppquiz.org)
 
 ### Editors
 
