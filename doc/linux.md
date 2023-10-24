@@ -10,7 +10,7 @@
 
 ## Bash
 
-| Command                         | What does it do?           |
+| Command                         | Description                |
 | ------------------------------- | -------------------------- |
 | `groups`                        |                            |
 | `chmod`                         |                            |
@@ -40,7 +40,7 @@
 
 ### Commands
 
-| Command       | What does it do?                    |
+| Command       | Description                         |
 | ------------- | ----------------------------------- |
 | :Ex or :E     | File Explorer                       |
 | :Ex or :E     | File Explorer                       |
@@ -70,7 +70,7 @@
 
 ## Tmux
 
-| Command                            | What does it do?   |
+| Command                            | Description        |
 | ---------------------------------- | ------------------ |
 | `C-b`                              | prefix key         |
 | `C-b %`                            | split vertically   |

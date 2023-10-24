@@ -58,7 +58,7 @@ git submodule update --remote
 
 ## Useful Commands
 
-| Command                            | What does it do?                 |
+| Command                            | Description                      |
 | ---------------------------------- | -------------------------------- |
 | `git remote set-url <name> <url>`  | change remote url                |
 | `git remote add <name> <url>`      | add remote                       |
