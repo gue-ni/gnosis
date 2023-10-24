@@ -7,7 +7,7 @@
 
 ## Basic Phong Lighting
 
-```glsl
+```cpp
 
 vec3 lightPos = vec3();
 
