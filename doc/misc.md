@@ -1,23 +1,5 @@
 # Misc
 
-## Math
-
-### Map Range
-
-To map any range `[in_min, in_max]` to `[out_min, out_max]` we can use this function:
-
-```cpp
-template<typename T>
-T map_range(T s, T in_min, T in_max, T out_min, T out_max)
-{
-    assert(in_min <= s && s <= in_max);
-    return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
-}
-```
-
-There are a few special cases where we can simplify this function.  
- 
-
 ## HTML Entities
 
 | HTML Entity | Symbol   | Description    |
@@ -61,5 +43,3 @@ There are a few special cases where we can simplify this function.
 | Function   | Shortcut       |
 | ---------- | -------------- |
 | Next track | `Ctrl + Right` |
-
-
