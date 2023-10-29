@@ -35,15 +35,6 @@ git branch -a
 git checkout -b remote-branch-name origin/remote-branch-name
 ```
 
-### Git Rebase
-
-Get master branch updates on feature branch.
-
-```bash
-
-
-```
-
 ## Submodules
 
 [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
@@ -55,6 +46,12 @@ git submodule add <repository url>
 # update local repo with remote changes
 git submodule update --remote
 ```
+
+## Ignore Files without modifying `.gitignore`
+
+To ignore user-specific as well as repo-specific changes without having to modify the 
+`.gitignore` file you should put the relevant patterns in `$GIT_DIR/info/exclude`.
+`$GIT_DIR` usually refers to `.git/`.
 
 ## Useful Commands
 
