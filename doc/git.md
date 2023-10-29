@@ -4,9 +4,7 @@
 
 ### Set Default Editor To `vi`
 
-```bash
-git config --global core.editor "vi"
-```
+`git config --global core.editor "vi"`
 
 ### Reset to last commit
 
@@ -18,9 +16,7 @@ git config --global core.editor "vi"
 
 ### Get Short Commit Hash
 
-```bash
-commithash=$(git log -1 --pretty=format:%h)
-```
+`git log -1 --pretty=format:%h`
 
 ### Checkout Remote Branch
 
