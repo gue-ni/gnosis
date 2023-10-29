@@ -16,9 +16,7 @@
 
 ### Get Short Commit Hash
 
-```bash
-commithash=$(git log -1 --pretty=format:%h)
-```
+`git log -1 --pretty=format:%h`
 
 ### Checkout Remote Branch
 
