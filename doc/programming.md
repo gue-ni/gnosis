@@ -2,14 +2,15 @@
 
 ## Table of Contents
 
--   [Cpp](#cpp)
--   [Python](#python)
--   [Rust](#rust)
--   [Java](#java)
+- [Cpp](#cpp)
+- [Python](#python)
+- [Rust](#rust)
+- [Java](#java)
 
 ## Cpp
 
--   [cppquiz.org](https://cppquiz.org)
+- [cppquiz.org](https://cppquiz.org)
+- [cppreference.com](https://en.cppreference.com/w/)
 
 ### Editors
 
@@ -68,12 +69,12 @@ gcc -fsanitize=address,undefined,null
 
 ## Python
 
--   [pythontips.com](https://book.pythontips.com/)
--   [realpython.com](https://realpython.com/)
+- [pythontips.com](https://book.pythontips.com/)
+- [realpython.com](https://realpython.com/)
 
 ## Rust
 
--   [The Rust Programming Language](https://doc.rust-lang.org/book/)
+- [The Rust Programming Language](https://doc.rust-lang.org/book/)
 
 ## Java
 
