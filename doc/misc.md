@@ -43,5 +43,3 @@
 | Function   | Shortcut       |
 | ---------- | -------------- |
 | Next track | `Ctrl + Right` |
-
-
