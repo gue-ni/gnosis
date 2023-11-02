@@ -21,6 +21,7 @@
 | shortcut             | effect                              |
 | -------------------- | ----------------------------------- |
 | `Ctrl + Q, Ctrl + T` | Search for files, types and members |
+| `Ctrl + A, Ctrl + M` | Format file                         |
 
 #### Visual Studio Code
 
