@@ -27,6 +27,7 @@
       --border-color-default: #D0D7DE;
       --background-color: #F8FAFC;
       --code-background-color: #F6F8FA;
+      --code-background-color-2: rgba(0, 0, 0, 0.08);
       --monospace-font: 'Roboto Mono', monospace;
       --serif-font: Georgia, serif;
       --sans-serif-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -54,14 +55,17 @@
     }
 
     code {
-      font-weight: 300;
+      font-weight: 400;
       font-family: var(--monospace-font);
+      background-color: var(--code-background-color-2);
+      padding: .2em .3em;
+      border-radius: .2em;
     }
 
     code[class|="language"] {
       border: 1px solid var(--border-color-default);
       border-radius: .5rem;
-      background-color: var(--code-background-color);
+      background-color: var(--code-background-color-2);
     }
 
     table {
