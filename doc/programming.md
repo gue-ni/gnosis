@@ -73,6 +73,11 @@ gcc -fsanitize=address,undefined,null
 - [pythontips.com](https://book.pythontips.com/)
 - [realpython.com](https://realpython.com/)
 
+
+### Install dependencies with PIP
+
+`python -m pip install <module>`
+
 ## Rust
 
 - [The Rust Programming Language](https://doc.rust-lang.org/book/)
