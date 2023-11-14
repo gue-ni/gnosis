@@ -2,6 +2,12 @@
 
 ## Common Tasks
 
+### Diff two branches in github
+
+[Comparing Commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits)
+
+[https://github.com/gue-ni/renderer/compare/master...dev](https://github.com/gue-ni/renderer/compare/master...dev)
+
 ### Set Default Editor To `vi`
 
 `git config --global core.editor "vi"`
