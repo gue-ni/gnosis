@@ -1,10 +1,22 @@
 # Math
 
+## Vector From Spherical Coordinates
+
+```cpp
+glm::vec3 vector_from_spherical(float theta, float phi)
+{
+    float sin_phi = std::sin(phi);
+    float cos_phi = std::cos(phi);
+    float sin_theta = std::sin(theta);
+    float cos_theta = std::cos(theta);
+    return { cos_phi * sin_theta, sin_phi * sin_theta, cos_theta };
+}
+```
+
 ## Haversine Formula
 
 ```cpp
 #include <glm/glm.hpp>
-#include <iostream>
 
 // Distance between two coordinates
 // https://en.wikipedia.org/wiki/Haversine_formula
@@ -20,13 +32,6 @@ float haversine_distance(float lat_1, float lon_1, float lat_2, float lon_2)
             std::cos(glm::radians(lat_1)) * std::cos(glm::radians(lat_2))  * 
             std::pow(std::sin(delta_lon / 2), 2)));
 }
-
-int main(void)
-{
-    const glm::vec2 vienna = {48.2082f, 16.3738f};
-    const glm::vec2 graz = {47.0707f, 15.4395f};
-    float d = haversine_distance(vienna.x,  vienna.y, graz.x, graz.y);
-    std::cout << "distance = " << d << " ~ " << 144.56 << std::endl;
-    return 0;
-}
 ```
+
+
