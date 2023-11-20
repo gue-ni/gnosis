@@ -2,7 +2,7 @@
 
 ## Vector From Spherical Coordinates
 
-In this reference system, `y` 
+In this reference system, `y` is up.
 
 ```cpp
 glm::vec3 vector_from_spherical(float pitch, float yaw)
