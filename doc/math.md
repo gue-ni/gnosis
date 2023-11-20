@@ -2,14 +2,16 @@
 
 ## Vector From Spherical Coordinates
 
+In this reference system, `y` 
+
 ```cpp
-glm::vec3 vector_from_spherical(float theta, float phi)
+glm::vec3 vector_from_spherical(float pitch, float yaw)
 {
-    float sin_phi = std::sin(phi);
-    float cos_phi = std::cos(phi);
-    float sin_theta = std::sin(theta);
-    float cos_theta = std::cos(theta);
-    return { cos_phi * sin_theta, sin_phi * sin_theta, cos_theta };
+    return {
+        std::cos(yaw) * std::sin(pitch),
+        std::cos(pitch),
+        std::sin(yaw) * std::sin(pitch)
+     };
 }
 ```
 
