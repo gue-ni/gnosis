@@ -7,10 +7,7 @@ layout: layouts/base.njk
 <div id="result"></div>
 
 <script>
-    let width = window.screen.width;
-    let height = window.screen.height;
-    
     let el = document.getElementById("result");
-    el.innerText = `${width}x${height}`;
+    el.innerText = `${window.screen.width}x${window.screen.height}`;
 </script>
 
