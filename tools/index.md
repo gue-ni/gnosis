@@ -4,4 +4,4 @@ layout: layouts/base.njk
 
 # Tools
 
-- [What is my screen size?](screensize/)
+- [What Is My Screen Size?](screensize/)
