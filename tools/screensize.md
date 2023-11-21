@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 
-# What is my Screen Size?
+# What Is My Screen Size?
 
 <div id="result"></div>
 
