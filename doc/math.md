@@ -5,6 +5,8 @@
 In this reference system, `y` is up.
 
 ```cpp
+#include <glm/glm.hpp>
+
 glm::vec3 vector_from_spherical(float pitch, float yaw)
 {
     return {
