@@ -1,5 +1,7 @@
 # Math
 
+A collection of useful formulas I don't want to look up again.
+
 ## Vector From Spherical Coordinates
 
 In this reference system, `y` is up.
@@ -17,7 +19,7 @@ glm::vec3 vector_from_spherical(float pitch, float yaw)
 }
 ```
 
-## Haversine Formula
+## Haversine Formula (Distance Between Points on Sphere)
 
 ```cpp
 #include <glm/glm.hpp>
