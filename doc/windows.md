@@ -1,5 +1,12 @@
 # Windows
 
+## Find Process Locking File or Folder
+
+1. Open _Resource Manager_.
+2. Goto _CPU_ Tab.
+3. Search for File/Folder in _Asssociated Handles_
+4. Right-click and select _End Process_.
+
 ## Disable the annoying 'Ding'
 
 Click:
