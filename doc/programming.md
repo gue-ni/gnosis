@@ -48,6 +48,22 @@ File sections are useful for better readability.
 /*==================[end of file]===========================================*/
 ```
 
+### Embedd String from File
+
+```cpp
+#include <iostream>
+#include <string>
+
+const std::string shader = R"(
+#include "shader.glsl"
+)";
+
+int main() {
+    std::cout << shader << std::endl;
+    return 0;
+}
+```
+
 ### Compiler options
 
 ```bash
