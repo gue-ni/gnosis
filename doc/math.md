@@ -2,6 +2,46 @@
 
 A collection of useful formulas I don't want to look up again.
 
+## Map Numeric Ranges 
+
+To map any range `[in_min, in_max]` to `[out_min, out_max]` we can use this function:
+
+```cpp
+float map_range(float s, float in_min, float in_max, float out_min, float out_max)
+{
+    assert(in_min <= s && s <= in_max);
+    return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
+}
+
+// Map from [0, 1] to [out_min, out_max]:
+float map_range(float s, float out_min, float out_max)
+{
+    assert(0 <= s && s <= 1);
+    return out_min + s * (out_max - out_min);
+}
+
+// Map from [-1, 1] to [0, 1]:
+float map_range(float s)
+{
+    assert(-1.0f <= s && s <= 1.0f);
+    return (s + 1.0f) / 2.0f;
+}
+
+// Map from [-0.5, 0.5] to [0, 1]:
+float map_range(float s)
+{
+    assert(-0.5f <= s && s <= 0.5f);
+    return s + 0.5f;
+}
+
+// Map from [0, 1] to [-1, 1]:
+float map_range(float s)
+{
+    assert(0.0f <= s && s <= 1.0f);
+    return s * 2.0f - 1.0f;
+}
+```
+
 ## Vector From Spherical Coordinates
 
 In this reference system, `y` is up.
