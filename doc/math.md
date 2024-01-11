@@ -1,6 +1,18 @@
 # Math
 
-A collection of useful formulas I don't want to look up again.
+A collection of useful formulas & functions I don't want to look up again.
+
+## Boolean Algebra
+
+```cpp
+// Material Condition (Implies)
+bool implies(bool a, bool b) { return !a || b; }
+
+// Exclusive OR
+bool xor_v1(bool a, bool b) { return (a || b) && !(a || b); }
+bool xor_v2(bool a, bool b) { return ((!a) != (!b)); }
+bool xor_v3(bool a, bool b) { return (!a && b) || (a && !b); }
+```
 
 ## Map Numeric Ranges 
 

@@ -11,6 +11,10 @@ typedef uint32_t                                    uint32;
 typedef uint_least8_t                               uint8_least;
 typedef uint_least16_t                              uint16_least;
 typedef uint_least32_t                              uint32_least;
+typedef unsigned char                               boolean;
+
+#define TRUE    1
+#define FALSE   0
 
 #define AUTOMATIC                                   /* memclass */
 #define SOAD_APPL_DATA                              /* ptrclass */
