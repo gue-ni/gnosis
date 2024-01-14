@@ -5,8 +5,18 @@ A collection of useful formulas & functions I don't want to look up again.
 ## Boolean Algebra
 
 ```cpp
+typedef bool(*logic_function)(bool, bool);
+void truth_table(logic_function func) {
+    for (int a = 0; a < 2; ++a) 
+        for (int b = 0; b < 2; ++b) 
+            printf("%d, %d -> %d\n", a, b, func(a, b));
+}
+
 // Material Condition (Implies)
-bool implies(bool a, bool b) { return !a || b; }
+bool implies(bool a, bool b) { return (!a) || (b); }
+
+// Iff (If and only  if)
+bool if_and_only_if(bool a, bool b) { return implies(a, b) && implies(b, a); }
 
 // Exclusive OR
 bool xor_v1(bool a, bool b) { return (a || b) && !(a || b); }
