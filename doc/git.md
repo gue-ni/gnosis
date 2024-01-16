@@ -2,6 +2,19 @@
 
 ## Common Tasks
 
+### Create alias for command 
+
+```bash
+# original command
+git log --oneline --graph --decorate --all
+
+# create alias
+git config --global alias.lol "log --oneline --graph --decorate --all"
+
+# use the alias
+git lol
+```
+
 ### Diff two branches in github
 
 [Comparing Commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits)
