@@ -29,10 +29,10 @@ bool xor_v3(bool a, bool b) { return (!a && b) || (a && !b); }
 To map any range `[in_min, in_max]` to `[out_min, out_max]` we can use this function:
 
 ```cpp
-float map_range(float s, float in_min, float in_max, float out_min, float out_max)
+template <typename T>
+inline T map_range(const T& s, const T& in_min, const T& in_max, const T& out_min, const T& out_max)
 {
-    assert(in_min <= s && s <= in_max);
-    return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
+  return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
 }
 
 // Map from [0, 1] to [out_min, out_max]:
