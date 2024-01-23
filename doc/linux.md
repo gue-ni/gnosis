@@ -229,3 +229,10 @@ wget --mirror \
     --random-wait --wait 3 --no-http-keep-alive \
     https://site-to-download.com
 ```
+
+## Delete files found with `find`
+
+
+```bash
+find . -name *_log.txt -print0 | xargs -I {} -0 rm {}
+```
