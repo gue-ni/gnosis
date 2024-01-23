@@ -5,8 +5,18 @@ A collection of useful formulas & functions I don't want to look up again.
 ## Boolean Algebra
 
 ```cpp
+typedef bool(*logic_function)(bool, bool);
+void truth_table(logic_function func) {
+    for (int a = 0; a < 2; ++a) 
+        for (int b = 0; b < 2; ++b) 
+            printf("%d, %d -> %d\n", a, b, func(a, b));
+}
+
 // Material Condition (Implies)
-bool implies(bool a, bool b) { return !a || b; }
+bool implies(bool a, bool b) { return (!a) || (b); }
+
+// Iff (If and only  if)
+bool if_and_only_if(bool a, bool b) { return implies(a, b) && implies(b, a); }
 
 // Exclusive OR
 bool xor_v1(bool a, bool b) { return (a || b) && !(a || b); }
@@ -19,10 +29,10 @@ bool xor_v3(bool a, bool b) { return (!a && b) || (a && !b); }
 To map any range `[in_min, in_max]` to `[out_min, out_max]` we can use this function:
 
 ```cpp
-float map_range(float s, float in_min, float in_max, float out_min, float out_max)
+template <typename T>
+inline T map_range(const T& s, const T& in_min, const T& in_max, const T& out_min, const T& out_max)
 {
-    assert(in_min <= s && s <= in_max);
-    return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
+  return out_min + (s - in_min) * (out_max - out_min) / (in_max - in_min);
 }
 
 // Map from [0, 1] to [out_min, out_max]:
