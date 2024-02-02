@@ -13,13 +13,14 @@ template<typename T>
 inline T sq(const T& t) { return t * t; }
 
 // Point on Cube is in range [-1, 1]
+// https://mathproofs.blogspot.com/2005/07/mapping-cube-to-sphere.html
 inline glm::vec3 map_cube_to_sphere(const glm::vec3& point_on_cube) {
     float x = point_on_cube.x, y = point_on_cube.y, z = point_on_cube.z;
 
     glm::vec3 point_on_sphere;
-    point_on_sphere.x = x * std::sqrt(1.0f - (sq(y) / 2.0f) - (sq(z) / 2.0f) + ((sq(y) * sq(z)) / 3));
-    point_on_sphere.y = y * std::sqrt(1.0f - (sq(z) / 2.0f) - (sq(x) / 2.0f) + ((sq(z) * sq(x)) / 3));
-    point_on_sphere.z = z * std::sqrt(1.0f - (sq(x) / 2.0f) - (sq(y) / 2.0f) + ((sq(x) * sq(y)) / 3));
+    point_on_sphere.x = x * std::sqrt(1.0f - (sq(y) / 2.0f) - (sq(z) / 2.0f) + ((sq(y) * sq(z)) / 3.0f));
+    point_on_sphere.y = y * std::sqrt(1.0f - (sq(z) / 2.0f) - (sq(x) / 2.0f) + ((sq(z) * sq(x)) / 3.0f));
+    point_on_sphere.z = z * std::sqrt(1.0f - (sq(x) / 2.0f) - (sq(y) / 2.0f) + ((sq(x) * sq(y)) / 3.0f));
     return point_on_sphere;
 }
 ```
