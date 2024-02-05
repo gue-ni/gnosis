@@ -1,5 +1,13 @@
 # Windows
 
+## Find which `.dll` are loaded by executable
+
+In Visual Studio Command Prompt:
+
+```bash
+dumpbin.exe /imports MyApplication.exe
+```
+
 ## Find Process Locking File or Folder
 
 1. Open _Resource Manager_.
