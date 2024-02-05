@@ -1,7 +1,8 @@
 {
 	"vim.useSystemClipboard": true,
 	"vim.handleKeys": {
-		"<C-p>": false
+		"<C-p>": false,
+		"<C-f>": false
 	},
 	"editor.lineNumbers": "relative",
 	"[jsonc]": {
