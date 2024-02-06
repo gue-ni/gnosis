@@ -2,16 +2,15 @@
 	"vim.useSystemClipboard": true,
 	"vim.handleKeys": {
 		"<C-p>": false,
-		"<C-f>": false
+		"<C-f>": false,
+		"<C-a>": false,
+		"<C-c>": false,
+		"<C-v>": false
 	},
 	"editor.lineNumbers": "relative",
 	"[jsonc]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"files.autoSave": "onFocusChange",
-	"workbench.editor.enablePreview": false,
-	"files.associations": {
-		"*.njk": "html",
-		"*.ejs": "html"
-	}
+	"workbench.editor.enablePreview": false
 }
