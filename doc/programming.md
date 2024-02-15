@@ -89,6 +89,13 @@ gcc -fsanitize=address,undefined,null
 - [pythontips.com](https://book.pythontips.com/)
 - [realpython.com](https://realpython.com/)
 
+## How to use venv
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
 
 ### Install dependencies with PIP
 
