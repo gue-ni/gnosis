@@ -2,6 +2,14 @@
 
 A collection of useful formulas & functions I don't want to look up again.
 
+## Rainbow Colormap
+
+```glsl
+vec3 rainbow_colormap(float value, float min, float max) {
+    return vec3(1,0,0);
+}
+```
+
 ## Inverse Lerp
 
 ```cpp
