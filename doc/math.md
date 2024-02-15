@@ -2,6 +2,14 @@
 
 A collection of useful formulas & functions I don't want to look up again.
 
+## Inverse Lerp
+
+```cpp
+float inverse_lerp(float min, float max, float value) {
+    return (value - min) / (max - min);
+}
+```
+
 ## Mapping a Cube to a Sphere
 
 [Source](https://mathproofs.blogspot.com/2005/07/mapping-cube-to-sphere.html?m=1)
