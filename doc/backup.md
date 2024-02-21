@@ -16,6 +16,7 @@ FreeFileSync can also run as scheduled batch jobs
 
 - [NAS Box raspberry pi tutorial](https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/)
 - [Map a Network Drive in Windows](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-29ce55d1-34e3-a7e2-4801-131475f9557d)
+- [Pi Network File Share to Windows](https://www.youtube.com/watch?v=8QxJWW0mjAs)
 
 ## Permanently mount USB drive
 
