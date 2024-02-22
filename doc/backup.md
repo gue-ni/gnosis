@@ -3,7 +3,7 @@
 ## Ideas
 
 - Encryption Key on QR code
-- raspberry pi as file server
+- raspberry pi as file server -> works, but very slow
 
 ## FreeFileSync
 
@@ -17,6 +17,17 @@ FreeFileSync can also run as scheduled batch jobs
 - [NAS Box raspberry pi tutorial](https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/)
 - [Map a Network Drive in Windows](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-29ce55d1-34e3-a7e2-4801-131475f9557d)
 - [Pi Network File Share to Windows](https://www.youtube.com/watch?v=8QxJWW0mjAs)
+- [exFat with rasbian and samba](https://nebulousthinking.wordpress.com/2018/09/29/using-exfat-drives-with-rasbian-and-samba/)
+
+To hide home directory set `available = no` but `browseable = yes`.
+
+Should the drive be formatted as exFat?
+
+**Advantage:**
+Can be moved between Windows and Linux.
+
+**Disadvantage:**
+No file permissions, not linux native.
 
 ## Permanently mount USB drive
 
@@ -30,7 +41,7 @@ fdisk -l
 sudo blkid
 
 # edit fstab file
-# sudo vi /etc/fstab
+sudo vi /etc/fstab
 
 # add this line:
 UUID=D632-BE5F /mnt/pidrive exfat defaults,auto,users,rw,nofail 0 0
@@ -41,14 +52,11 @@ sudo mount -a
 
 ## LUKS
 
-Encrypt a usb drive on linux.
-
-https://linux.tips/tutorials/how-to-encrypt-a-usb-drive-on-linux-operating-system
+[encrypt usb drive on linux](https://linux.tips/tutorials/how-to-encrypt-a-usb-drive-on-linux-operating-system)
 
 ### Setup:
 
 ```bash
-
 # find device to encrypt
 sudo fdisk -l
 
