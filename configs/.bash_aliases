@@ -15,3 +15,7 @@ alias update='sudo apt-get update && sudo apt-get upgrade -y'
 
 # docker
 alias dc='docker-compose'
+
+# tmux
+alias tmls='tmux ls'
+alias tma='tmux attach-session -t '
