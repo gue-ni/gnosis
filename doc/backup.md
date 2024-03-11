@@ -8,7 +8,7 @@
 ## FreeFileSync
 
 Use [FreeFileSync](https://freefilesync.org/) to sync windows drives with external hard drive
-and even raspberry pi as sftp server ([more here](https://freefilesync.org/manual.php?topic=ftp-setup)).
+or raspberry pi as samba NFS.
 FreeFileSync can also run as scheduled batch jobs
 ([more here](https://freefilesync.org/manual.php?topic=schedule-batch-jobs)).
 
