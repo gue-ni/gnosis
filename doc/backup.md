@@ -2,8 +2,8 @@
 
 ## Ideas
 
-- Encryption Key on QR code
-- raspberry pi as file server -> works, but very slow
+- encryption key on QR code
+- raspberry pi as samba file server
 
 ## FreeFileSync
 
