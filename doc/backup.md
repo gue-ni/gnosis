@@ -21,14 +21,6 @@ FreeFileSync can also run as scheduled batch jobs
 
 To hide home directory set `available = no` but `browseable = yes`.
 
-Should the drive be formatted as exFat?
-
-**Advantage:**
-Can be moved between Windows and Linux.
-
-**Disadvantage:**
-No file permissions, not linux native.
-
 ## Permanently mount USB drive
 
 ```bash
