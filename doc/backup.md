@@ -38,6 +38,12 @@ directory mask=0777
 public=no
 ```
 
+Test with: 
+
+```bash
+smbclient //127.0.0.1/shared -U pi-nas-user
+```
+
 ## Permanently mount USB drive
 
 ```bash
