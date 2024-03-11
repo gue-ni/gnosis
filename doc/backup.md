@@ -21,6 +21,23 @@ FreeFileSync can also run as scheduled batch jobs
 
 To hide home directory set `available = no` but `browseable = yes`.
 
+`/etc/fstab`:
+
+```txt
+/dev/sda1 /mnt/shared/ exfat rw,async,uid=1000,gid=1000,umask=000 0 0
+```
+
+`/etc/samba/smb.conf`:
+
+```txt
+[shared]
+path=/mnt/shared
+writeable=Yes
+create mask=0777
+directory mask=0777
+public=no
+```
+
 ## Permanently mount USB drive
 
 ```bash
