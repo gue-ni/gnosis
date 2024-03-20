@@ -44,6 +44,10 @@ Test with:
 smbclient //127.0.0.1/shared -U pi-nas-user
 ```
 
+## Sync Android Phone to NAS
+
+- https://www.youtube.com/watch?v=jevRJ2lTn8M
+
 ## Permanently mount USB drive
 
 ```bash
