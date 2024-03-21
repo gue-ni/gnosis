@@ -48,7 +48,7 @@ It is possible that SMB capability is turned off on Windows, if so it can be ena
 
 ## Sync Android Phone to NAS
 
-- https://www.youtube.com/watch?v=jevRJ2lTn8M
+- [android smartphone sync photos and videos to NAS SMB share](https://www.youtube.com/watch?v=jevRJ2lTn8M)
 
 ## Permanently mount USB drive
 
