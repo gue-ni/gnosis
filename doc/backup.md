@@ -44,6 +44,8 @@ Test with:
 smbclient //127.0.0.1/shared -U pi-nas-user
 ```
 
+It is possible that SMB capability is turned off on Windows, if so it can be enabled at 'Control Panel' > 'Programs and Features' > 'Turn Windows features on or off' > 'SMB 1.0 Support'. 
+
 ## Sync Android Phone to NAS
 
 - https://www.youtube.com/watch?v=jevRJ2lTn8M
