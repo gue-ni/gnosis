@@ -112,6 +112,15 @@ PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
 
+## block IP with ufw
+
+Careful: the ordering is important, so we have to insert deny rules before allow rules.
+
+```bash
+IP=113.211.133.116
+sudo ufw insert 1 deny from ${IP} to any 
+```
+
 ## Where to store user scripts
 
 User scripts should generally go into `/usr/local/bin`.
