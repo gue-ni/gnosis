@@ -2,11 +2,17 @@
 
 ## Table of Contents
 
-- [Bash](#bash)
-- [Vim](#vim)
-- [SSH](#ssh)
-- [Tmux](#tmux)
-- [Nginx](#nginx)
+-   [Bash](#bash)
+-   [Vim](#vim)
+-   [SSH](#ssh)
+-   [Tmux](#tmux)
+-   [Create High Quality Gifs from Videos](#create-high-quality-gifs-from-videos)
+-   [Block IP address with UFW](#block-ip-address-with-ufw)
+-   [Mirror a Website](#mirror-a-website)
+-   [Change Hostname](#change-hostname)
+-   [Stat Disk Usage](#stat-disk-usage)
+-   [Nginx](#nginx)
+-   [Mount USB Drive](#mount-usb-drive)
 
 ## Bash
 
@@ -61,13 +67,6 @@
 | J             | join lines, removing newline        |
 | gq            | format long lines                   |
 
-### Implement VSCode's Ctrl+P in Vim
-
-### plugins
-
-- supertab
-- AutoComplPop
-
 ## Tmux
 
 | Command                            | Description        |
@@ -112,7 +111,7 @@ PermitRootLogin yes > PermitRootLogin no
 service ssh restart
 ```
 
-## create high quality gifs from videos
+## Create High Quality Gifs from Videos
 
 ```bash
 #!/bin/sh
@@ -127,16 +126,16 @@ ffmpeg -i $1 -vf "palettegen" -y $palette
 ffmpeg -i $1 -i $palette -lavfi "${filters} [x]; [x][1:v] paletteuse" -y $2
 ```
 
-## block IP with ufw
+## Block IP address with UFW
 
 Careful: the ordering is important, so we have to insert deny rules before allow rules.
 
 ```bash
 IP=113.211.133.116
-sudo ufw insert 1 deny from ${IP} to any 
+sudo ufw insert 1 deny from ${IP} to any
 ```
 
-## Where to store user scripts
+## where to store user scripts
 
 User scripts should generally go into `/usr/local/bin`.
 
@@ -161,7 +160,7 @@ sudo reboot
 
 If this does still not work, set `preserve_hostname` in `/etc/cloud/cloud.cfg` to `true`.
 
-## find files older than 7 days and move them to archive
+## find files older than 7 days
 
 ```bash
 find . -mtime +7 -print0 | xargs -0 -I '{}' mv {} archive/
@@ -232,12 +231,14 @@ sed -i 's/^/hello /g' file.txt
 command > file 2>&1
 ```
 
-## Disk Usage
+## Stat Disk Usage
 
 ```bash
-# print size of current directory
+# estimate file space usage
 du -sh .
-> 17G
+
+# report file system space usage
+df -h
 ```
 
 ## Mirror a website
@@ -255,7 +256,6 @@ wget --mirror \
 ```
 
 ## Delete files found with `find`
-
 
 ```bash
 find . -name *_log.txt -print0 | xargs -I {} -0 rm {}
