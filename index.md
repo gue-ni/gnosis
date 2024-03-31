@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 # Gnosis
 
-_Gnosis_ is a feminine Greek noun which means "knowledge" or "awareness".
+_Gnosis_ is a Greek noun which means "knowledge" or "awareness".
 
 Useful commands, scripts, config files, etc can be found here.
 
