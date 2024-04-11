@@ -4,7 +4,7 @@ A collection of useful formulas & functions I don't want to look up again.
 
 ## Trigonometry
 
-![Trigonometry Cheat Sheet](./img/trig-cheat-sheet.png)
+![Trigonometry Cheat Sheet](../img/trig-cheat-sheet.png)
 
 ## Inverse Lerp
 
