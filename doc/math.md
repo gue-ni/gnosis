@@ -2,13 +2,9 @@
 
 A collection of useful formulas & functions I don't want to look up again.
 
-## Rainbow Colormap
+## Trigonometry
 
-```glsl
-vec3 rainbow_colormap(float value, float min, float max) {
-    return vec3(1,0,0);
-}
-```
+![](/images/trig-cheat-sheet.png)
 
 ## Inverse Lerp
 
@@ -40,7 +36,7 @@ inline glm::vec3 map_cube_to_sphere(const glm::vec3& point_on_cube) {
 }
 ```
 
-## Map Numeric Ranges 
+## Map Numeric Ranges
 
 To map any range `[in_min, in_max]` to `[out_min, out_max]` we can use this function:
 
@@ -113,7 +109,7 @@ float haversine_distance(float lat_1, float lon_1, float lat_2, float lon_2)
     return 2 * radius * std::asin(
         std::sqrt(
             std::pow(std::sin(delta_lat / 2), 2) +
-            std::cos(glm::radians(lat_1)) * std::cos(glm::radians(lat_2))  * 
+            std::cos(glm::radians(lat_1)) * std::cos(glm::radians(lat_2))  *
             std::pow(std::sin(delta_lon / 2), 2)));
 }
 ```
@@ -123,8 +119,8 @@ float haversine_distance(float lat_1, float lon_1, float lat_2, float lon_2)
 ```cpp
 typedef bool(*logic_function)(bool, bool);
 void truth_table(logic_function func) {
-    for (int a = 0; a < 2; ++a) 
-        for (int b = 0; b < 2; ++b) 
+    for (int a = 0; a < 2; ++a)
+        for (int b = 0; b < 2; ++b)
             printf("%d, %d -> %d\n", a, b, func(a, b));
 }
 
