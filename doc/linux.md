@@ -66,6 +66,7 @@
 | C-w w         | navigate to next split window       |
 | J             | join lines, removing newline        |
 | gq            | format long lines                   |
+| set paste + shift insert | paste from clipboard     |
 
 ## Tmux
 
