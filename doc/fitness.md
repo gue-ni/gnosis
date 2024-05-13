@@ -1,9 +1,5 @@
 # Fitness
 
-## Workouts
-
--  2023-12-29
-
 ## Links
 
 - [3 Day Workout Split](https://www.setforset.com/blogs/news/3-day-workout-split)
