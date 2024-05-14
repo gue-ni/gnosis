@@ -1,9 +1,21 @@
 # Backup
 
+- [Backup](#backup)
+  - [Ideas](#ideas)
+  - [FreeFileSync](#freefilesync)
+  - [Raspberry Pi as NAS with Samba](#raspberry-pi-as-nas-with-samba)
+  - [Sync Android Phone to NAS](#sync-android-phone-to-nas)
+  - [Permanently mount USB drive](#permanently-mount-usb-drive)
+  - [LUKS](#luks)
+    - [Setup:](#setup)
+    - [Mounting:](#mounting)
+    - [Unmounting:](#unmounting)
+  - [WSL](#wsl)
+
 ## Ideas
 
-- encryption key on QR code
-- raspberry pi as samba file server
+-   encryption key on QR code
+-   raspberry pi as samba file server
 
 ## FreeFileSync
 
@@ -14,10 +26,10 @@ FreeFileSync can also run as scheduled batch jobs
 
 ## Raspberry Pi as NAS with Samba
 
-- [NAS Box raspberry pi tutorial](https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/)
-- [Map a Network Drive in Windows](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-29ce55d1-34e3-a7e2-4801-131475f9557d)
-- [Pi Network File Share to Windows](https://www.youtube.com/watch?v=8QxJWW0mjAs)
-- [exFat with rasbian and samba](https://nebulousthinking.wordpress.com/2018/09/29/using-exfat-drives-with-rasbian-and-samba/)
+-   [NAS Box raspberry pi tutorial](https://www.raspberrypi.com/tutorials/nas-box-raspberry-pi-tutorial/)
+-   [Map a Network Drive in Windows](https://support.microsoft.com/en-us/windows/map-a-network-drive-in-windows-29ce55d1-34e3-a7e2-4801-131475f9557d)
+-   [Pi Network File Share to Windows](https://www.youtube.com/watch?v=8QxJWW0mjAs)
+-   [exFat with rasbian and samba](https://nebulousthinking.wordpress.com/2018/09/29/using-exfat-drives-with-rasbian-and-samba/)
 
 To hide home directory set `available = no` but `browseable = yes`.
 
@@ -38,17 +50,17 @@ directory mask=0777
 public=no
 ```
 
-Test with: 
+Test with:
 
 ```bash
 smbclient //127.0.0.1/shared -U pi-nas-user
 ```
 
-It is possible that SMB capability is turned off on Windows, if so it can be enabled at 'Control Panel' > 'Programs and Features' > 'Turn Windows features on or off' > 'SMB 1.0 Support'. 
+It is possible that SMB capability is turned off on Windows, if so it can be enabled at 'Control Panel' > 'Programs and Features' > 'Turn Windows features on or off' > 'SMB 1.0 Support'.
 
 ## Sync Android Phone to NAS
 
-- [android smartphone sync photos and videos to NAS SMB share](https://www.youtube.com/watch?v=jevRJ2lTn8M)
+-   [android smartphone sync photos and videos to NAS SMB share](https://www.youtube.com/watch?v=jevRJ2lTn8M)
 
 ## Permanently mount USB drive
 

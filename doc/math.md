@@ -2,6 +2,19 @@
 
 A collection of useful formulas & functions I don't want to look up again.
 
+## Content
+
+- [Math](#math)
+  - [Content](#content)
+  - [Trigonometry](#trigonometry)
+  - [Inverse Lerp](#inverse-lerp)
+  - [Mapping a Cube to a Sphere](#mapping-a-cube-to-a-sphere)
+  - [Map Numeric Ranges](#map-numeric-ranges)
+  - [Vector From Spherical Coordinates](#vector-from-spherical-coordinates)
+  - [Haversine Formula (Distance Between Points on Sphere)](#haversine-formula-distance-between-points-on-sphere)
+  - [Boolean Algebra](#boolean-algebra)
+
+
 ## Trigonometry
 
 ![Trigonometry Cheat Sheet](../img/trig-cheat-sheet.png)

@@ -1,8 +1,23 @@
 # Git
 
+- [Git](#git)
+  - [Common Tasks](#common-tasks)
+    - [Create alias for command](#create-alias-for-command)
+    - [Diff two branches in github](#diff-two-branches-in-github)
+    - [Set Default Editor To `vi`](#set-default-editor-to-vi)
+    - [Reset to last commit](#reset-to-last-commit)
+    - [Reset file to last commit](#reset-file-to-last-commit)
+    - [Get Short Commit Hash](#get-short-commit-hash)
+    - [Checkout Remote Branch](#checkout-remote-branch)
+  - [Submodules](#submodules)
+  - [Ignore Files without modifying `.gitignore`](#ignore-files-without-modifying-gitignore)
+  - [Useful Commands](#useful-commands)
+  - [Links](#links)
+
+
 ## Common Tasks
 
-### Create alias for command 
+### Create alias for command
 
 ```bash
 # original command
@@ -64,7 +79,7 @@ git submodule update --remote
 
 ## Ignore Files without modifying `.gitignore`
 
-To ignore user-specific as well as repo-specific changes without having to modify the 
+To ignore user-specific as well as repo-specific changes without having to modify the
 `.gitignore` file you should put the relevant patterns in `$GIT_DIR/info/exclude`.
 `$GIT_DIR` usually refers to `.git/`.
 

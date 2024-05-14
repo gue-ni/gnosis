@@ -24,4 +24,4 @@
 -   Wasserflasche
 -   Essen
 -   Wetterbericht?
-  
+

@@ -2,17 +2,32 @@
 
 ## Table of Contents
 
--   [Bash](#bash)
--   [Vim](#vim)
--   [SSH](#ssh)
--   [Tmux](#tmux)
--   [Create High Quality Gifs from Videos](#create-high-quality-gifs-from-videos)
--   [Block IP address with UFW](#block-ip-address-with-ufw)
--   [Mirror a Website](#mirror-a-website)
--   [Change Hostname](#change-hostname)
--   [Stat Disk Usage](#stat-disk-usage)
--   [Nginx](#nginx)
--   [Mount USB Drive](#mount-usb-drive)
+- [Linux](#linux)
+  - [Table of Contents](#table-of-contents)
+  - [Bash](#bash)
+  - [Vim](#vim)
+    - [Commands](#commands)
+  - [Tmux](#tmux)
+  - [SSH](#ssh)
+    - [ssh jump hops](#ssh-jump-hops)
+    - [ssh straight into tmux](#ssh-straight-into-tmux)
+    - [ssh disallow root login](#ssh-disallow-root-login)
+  - [Create High Quality Gifs from Videos](#create-high-quality-gifs-from-videos)
+  - [Block IP address with UFW](#block-ip-address-with-ufw)
+  - [where to store user scripts](#where-to-store-user-scripts)
+  - [get referer with awk](#get-referer-with-awk)
+  - [change hostname](#change-hostname)
+  - [find files older than 7 days](#find-files-older-than-7-days)
+  - [Nginx](#nginx)
+    - [Setup nginx server block for domain](#setup-nginx-server-block-for-domain)
+    - [Setup deploy with git using post-receive hooks](#setup-deploy-with-git-using-post-receive-hooks)
+    - [close connection without response](#close-connection-without-response)
+  - [mount usb drive](#mount-usb-drive)
+  - [sed](#sed)
+  - [redirect stderr to stdout](#redirect-stderr-to-stdout)
+  - [Stat Disk Usage](#stat-disk-usage)
+  - [Mirror a website](#mirror-a-website)
+  - [Delete files found with `find`](#delete-files-found-with-find)
 
 ## Bash
 
@@ -46,27 +61,27 @@
 
 ### Commands
 
-| Command       | Description                         |
-| ------------- | ----------------------------------- |
-| :Ex or :E     | File Explorer                       |
-| :Ex or :E     | File Explorer                       |
-| :Vex          | Split File Explorer                 |
-| :s/old/new/g  | Replace in lines                    |
-| dt<character> | delete up to <character>            |
-| cw            | delete word and go into insert mode |
-| C-u           | go up half a page                   |
-| C-d           | go down half a page                 |
-| %             | jump to closing bracket             |
-| :find         | search for file                     |
-| :grep         | grep files                          |
-| gd            | search for symbol under cursor      |
-| :Tex          | Tab file explorer                   |
-| gt            | go to next tab                      |
-| :split        | split into windows                  |
-| C-w w         | navigate to next split window       |
-| J             | join lines, removing newline        |
-| gq            | format long lines                   |
-| set paste + shift insert | paste from clipboard     |
+| Command                  | Description                         |
+| ------------------------ | ----------------------------------- |
+| :Ex or :E                | File Explorer                       |
+| :Ex or :E                | File Explorer                       |
+| :Vex                     | Split File Explorer                 |
+| :s/old/new/g             | Replace in lines                    |
+| dt<character>            | delete up to <character>            |
+| cw                       | delete word and go into insert mode |
+| C-u                      | go up half a page                   |
+| C-d                      | go down half a page                 |
+| %                        | jump to closing bracket             |
+| :find                    | search for file                     |
+| :grep                    | grep files                          |
+| gd                       | search for symbol under cursor      |
+| :Tex                     | Tab file explorer                   |
+| gt                       | go to next tab                      |
+| :split                   | split into windows                  |
+| C-w w                    | navigate to next split window       |
+| J                        | join lines, removing newline        |
+| gq                       | format long lines                   |
+| set paste + shift insert | paste from clipboard                |
 
 ## Tmux
 

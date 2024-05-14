@@ -1,5 +1,16 @@
 # Docker
 
+- [Docker](#docker)
+  - [docker](#docker-1)
+  - [docker-compose](#docker-compose)
+  - [Truncate large log](#truncate-large-log)
+  - [UFW](#ufw)
+  - [Links](#links)
+    - [Containerize node.js](#containerize-nodejs)
+  - [Examples](#examples)
+    - [Postgres](#postgres)
+    - [Mysql](#mysql)
+
 [Docker Curriculum](https://docker-curriculum.com/)
 
 ## docker
@@ -45,14 +56,14 @@ Always use
 
 ```yml
 port:
-  - "127.0.0.1:8080:8080"
+    - "127.0.0.1:8080:8080"
 ```
 
 instead of
 
 ```yml
 port:
-  - "8080:8080"
+    - "8080:8080"
 ```
 
 This ensures the ports are only accessible from localhost and not from the outside.
@@ -72,20 +83,20 @@ https://nodejs.org/de/docs/guides/nodejs-docker-webapp/
 ```yml
 version: "3.8"
 services:
-  db:
-    image: postgres:14.1-alpine
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-    ports:
-      - "5432:5432"
-    volumes:
-      - ./db:/var/lib/postgresql/data
-      - ./:/root
+    db:
+        image: postgres:14.1-alpine
+        restart: always
+        environment:
+            - POSTGRES_USER=postgres
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "5432:5432"
+        volumes:
+            - ./db:/var/lib/postgresql/data
+            - ./:/root
 volumes:
-  db:
-    driver: local
+    db:
+        driver: local
 ```
 
 ### Mysql
@@ -94,16 +105,16 @@ volumes:
 version: "3.1"
 
 services:
-  db:
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: password
+    db:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: password
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8080:8080
 ```

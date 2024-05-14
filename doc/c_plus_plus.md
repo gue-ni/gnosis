@@ -2,7 +2,9 @@
 
 ## Content
 
--  [vscode clangd settings](#vscode-clangd-settings)
+- [CPP](#cpp)
+  - [Content](#content)
+  - [vscode clangd settings](#vscode-clangd-settings)
 
 ## vscode clangd settings
 

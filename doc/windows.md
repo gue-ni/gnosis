@@ -1,5 +1,15 @@
 # Windows
 
+## Content
+
+- [Windows](#windows)
+  - [Content](#content)
+  - [Find which `.dll` are loaded by executable](#find-which-dll-are-loaded-by-executable)
+  - [Find Process Locking File or Folder](#find-process-locking-file-or-folder)
+  - [Disable the annoying 'Ding'](#disable-the-annoying-ding)
+  - [Shortcuts](#shortcuts)
+  - [Fix VMMEM using too much CPU](#fix-vmmem-using-too-much-cpu)
+
 ## Find which `.dll` are loaded by executable
 
 In Visual Studio Command Prompt:

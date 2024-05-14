@@ -2,15 +2,24 @@
 
 ## Table of Contents
 
-- [Cpp](#cpp)
-- [Python](#python)
-- [Rust](#rust)
-- [Java](#java)
+- [Programming](#programming)
+  - [Table of Contents](#table-of-contents)
+  - [Cpp](#cpp)
+    - [Editors](#editors)
+      - [Visual Studio 2022](#visual-studio-2022)
+      - [Visual Studio Code](#visual-studio-code)
+    - [File Sections](#file-sections)
+    - [Embedd String from File](#embedd-string-from-file)
+    - [Compiler options](#compiler-options)
+    - [Sanitizing](#sanitizing)
+  - [Python](#python)
+  - [How to use venv](#how-to-use-venv)
+    - [Install dependencies with PIP](#install-dependencies-with-pip)
 
 ## Cpp
 
-- [cppquiz.org](https://cppquiz.org)
-- [cppreference.com](https://en.cppreference.com/w/)
+-   [cppquiz.org](https://cppquiz.org)
+-   [cppreference.com](https://en.cppreference.com/w/)
 
 ### Editors
 
@@ -86,8 +95,8 @@ gcc -fsanitize=address,undefined,null
 
 ## Python
 
-- [pythontips.com](https://book.pythontips.com/)
-- [realpython.com](https://realpython.com/)
+-   [pythontips.com](https://book.pythontips.com/)
+-   [realpython.com](https://realpython.com/)
 
 ## How to use venv
 
@@ -96,8 +105,6 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-
 ### Install dependencies with PIP
 
 `python -m pip install <module>`
-
