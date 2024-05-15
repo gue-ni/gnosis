@@ -1,6 +1,6 @@
 # Checklists
 
-- [Content](#content)
+- [Work](#work)
 - [Fitinn](#fitinn)
 - [Hiking](#hiking)
 
