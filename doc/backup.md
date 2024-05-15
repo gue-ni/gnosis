@@ -7,9 +7,9 @@
   - [Sync Android Phone to NAS](#sync-android-phone-to-nas)
   - [Permanently mount USB drive](#permanently-mount-usb-drive)
   - [LUKS](#luks)
-    - [Setup:](#setup)
-    - [Mounting:](#mounting)
-    - [Unmounting:](#unmounting)
+    - [Setup](#setup)
+    - [Mounting](#mounting)
+    - [Unmounting](#unmounting)
   - [WSL](#wsl)
 
 ## Ideas
@@ -87,7 +87,7 @@ sudo mount -a
 
 [encrypt usb drive on linux](https://linux.tips/tutorials/how-to-encrypt-a-usb-drive-on-linux-operating-system)
 
-### Setup:
+### Setup
 
 ```bash
 # find device to encrypt
@@ -111,14 +111,14 @@ sudo mount /dev/mapper/USBDrive /media/pi/USBDrive
 df -h /media/pi/USBDrive
 ```
 
-### Mounting:
+### Mounting
 
 ```bash
 sudo cryptsetup luksOpen /dev/sda1 USBDrive
 sudo mount /dev/mapper/USBDrive /media/pi/USBDrive
 ```
 
-### Unmounting:
+### Unmounting
 
 ```bash
 sudo umount /media/pi/USBDrive
