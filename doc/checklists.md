@@ -28,6 +28,7 @@
 -   Powerbank
 -   Regenjacke
 -   Fleecejacke
+-   Tshirt
 -   Wasserflasche
 -   Essen
 -   Wetterbericht?
