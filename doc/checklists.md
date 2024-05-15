@@ -1,10 +1,17 @@
-# Content
+# Checklists
 
 - [Content](#content)
 - [Fitinn](#fitinn)
 - [Hiking](#hiking)
 
-# Fitinn
+## Work
+
+-    ID Badge
+-    Handtuch?
+-    T-Shirt?
+-    Unterhose?
+
+## Fitinn
 
 -   Handtuch
 -   Trainingshose
@@ -16,7 +23,7 @@
 -   Socken
 -   Unterhose
 
-# Hiking
+## Hiking
 
 -   Powerbank
 -   Regenjacke
