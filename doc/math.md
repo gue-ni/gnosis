@@ -15,9 +15,6 @@ A collection of useful formulas & functions I don't want to look up again.
   - [Boolean Algebra](#boolean-algebra)
 
 
-## Trigonometry
-
-![Trigonometry Cheat Sheet](../img/trig-cheat-sheet.png)
 
 ## Inverse Lerp
 
@@ -58,6 +55,12 @@ template <typename T>
 inline T map_range(const T& value, const T& in_min, const T& in_max, const T& out_min, const T& out_max)
 {
   return out_min + (value - in_min) * (out_max - out_min) / (in_max - in_min);
+}
+
+// Map from [in_min, in_max] to [0.0, 1.0]
+float map_range(float value, float in_min, float in_max)
+{
+  return (value - in_min) / (in_max - in_min);
 }
 
 // Map from [0, 1] to [out_min, out_max]:
@@ -149,4 +152,7 @@ bool xor_v2(bool a, bool b) { return ((!a) != (!b)); }
 bool xor_v3(bool a, bool b) { return (!a && b) || (a && !b); }
 ```
 
+## Trigonometry
+
+![Trigonometry Cheat Sheet](../img/trig-cheat-sheet.png)
 
