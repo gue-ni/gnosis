@@ -1,0 +1,38 @@
+IndentWidth: 3
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveAssignments: Consecutive
+AlignEscapedNewlines: Left
+AlignTrailingComments: Always
+AlignOperands: Align
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+BreakBeforeBraces: Allman
+BreakBeforeTernaryOperators: true
+BreakConstructorInitializers: BeforeComma
+BreakBeforeBinaryOperators: All
+BreakInheritanceList: BeforeComma
+ColumnLimit: 100
+CompactNamespaces: false
+EmptyLineBeforeAccessModifier: Always
+FixNamespaceComments: true
+IndentAccessModifiers: false
+IndentCaseBlocks: true
+IndentCaseLabels: true
+NamespaceIndentation: None
+PointerAlignment: Middle
+QualifierAlignment: Left
+ReferenceAlignment: Middle
+AlwaysBreakTemplateDeclarations: true
+UseTab: Never
+SpaceAfterCStyleCast: true
+SpaceAroundPointerQualifiers: Both
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: Never
+SpacesInParens: Custom
+SpacesInParensOptions:
+  InConditionalStatements: true
+  InCStyleCasts: true
+  Other: true
