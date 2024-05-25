@@ -20,9 +20,9 @@ IndentAccessModifiers: false
 IndentCaseBlocks: true
 IndentCaseLabels: true
 NamespaceIndentation: None
-PointerAlignment: Middle
+PointerAlignment: Left
 QualifierAlignment: Left
-ReferenceAlignment: Middle
+ReferenceAlignment: Left
 AlwaysBreakTemplateDeclarations: true
 UseTab: Never
 SpaceAfterCStyleCast: true
