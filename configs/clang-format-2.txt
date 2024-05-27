@@ -16,6 +16,7 @@ ColumnLimit: 100
 CompactNamespaces: false
 EmptyLineBeforeAccessModifier: Always
 FixNamespaceComments: true
+IncludeBlocks: Preserve
 IndentAccessModifiers: false
 IndentCaseBlocks: true
 IndentCaseLabels: true
@@ -25,6 +26,7 @@ QualifierAlignment: Left
 ReferenceAlignment: Left
 AlwaysBreakTemplateDeclarations: true
 UseTab: Never
+SortIncludes: Never
 SpaceAfterCStyleCast: true
 SpaceAroundPointerQualifiers: Both
 SpaceBeforeAssignmentOperators: true
