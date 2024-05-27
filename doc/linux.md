@@ -246,6 +246,11 @@ sed -i 's/^/hello /g' file.txt
 ```bash
 command > file 2>&1
 ```
+## redirect stderr to /dev/null
+
+```bash
+command 2>/dev/null
+```
 
 ## Stat Disk Usage
 
