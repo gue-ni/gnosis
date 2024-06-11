@@ -19,6 +19,26 @@ To use vscode with clangd, first run `cmake -DEXPORT_COMPILE_COMMANDS=1 ..`.
 }
 ```
 
+## vscode debugging settings (launch.json)
+
+```json
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "C++ Debug",
+         "type": "cppdbg",
+         "request": "launch",
+         "program": "${workspaceRoot}/build/sandbox",
+         "cwd": "${workspaceFolder}",
+         "MIMode": "gdb",
+         "args": [],
+         "stopAtEntry": true
+      }
+   ]
+}
+```
+
 
 
 
