@@ -15,7 +15,8 @@ To use vscode with clangd, first run `cmake -DEXPORT_COMPILE_COMMANDS=1 ..`.
     "--background-index",
     "--header-insertion=iwyu",
     "--pretty"
-  ]
+  ],
+  "C_Cpp.intelliSenseEngine": "disabled",
 }
 ```
 
